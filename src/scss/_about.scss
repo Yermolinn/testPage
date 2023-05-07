@@ -1,0 +1,240 @@
+.team {
+    padding: 110px 0 100px;
+    background: url('../images/bg/team-bg.jpg') center no-repeat;
+    background-size: cover;
+    @include media('max', 'sm') {
+        padding: 40px 0;
+        background: none;
+    }
+    
+}
+.team-list {
+    margin-top: 40px;
+    @include grid(3, 20px, 20px, 1, 0, 2); 
+    
+    
+}
+.team-item {
+    padding: 5px;
+    padding-bottom: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 25px rgba(184, 184, 184, 0.25);
+    border-radius: 5px;
+    @include media('max', 'sm') {
+        padding: 3px;
+        padding-bottom: 11px;
+    }
+    
+}
+.team-item__photo {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+    @include media('max', 'sm') {
+        height: 155px;
+    }
+}
+.team-item__content {
+    margin-top: 12px;
+    padding: 0 12px;
+    b {
+        display: block;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1B1B1B;
+        margin-bottom: 4px;
+    }
+    p {
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6B6B6B;
+        img {
+            margin-right: 6px;
+            margin-top: 6px;
+        }
+    }
+    @include media('max', 'sm') {
+        padding: 0 4px;
+        b {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        p {
+            display: block;
+            font-size: 12px;
+            line-height: 15px;
+            img {
+                margin-right: 0;
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+}
+.team-item_single {
+    padding: 0;
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    @include media('max', 'xl') {
+        display: none;
+    }
+    
+}
+.benefits {
+    padding: 80px 0 70px;
+    @include media('max', 'sm') {
+        padding: 0 0 40px;
+        .section-frame {
+            max-width: 100%;
+            padding: 0;
+        }
+    }
+    
+}
+.about-benefits_small-title {
+    h3 {
+        font-size: 50px;
+        line-height: 1;
+    }
+    @include media('max', 'sm') {
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        margin: 40px auto 0;
+        h3 {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    
+}
+.benefits-list {
+    @include grid(4, 40px, 40px, 1);
+    margin-bottom: 70px;
+    @include media('max', 'sm') {
+        max-width: 375px;
+        grid-gap: 0;
+        margin-bottom: 0;
+        padding: 50px 0;
+        background: url('../images/bg/benefits-bg.jpg') center no-repeat;
+        background-size: cover;
+    }
+}
+.benefits-item__single {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F9F9F9;
+    border-radius: 150px;
+    img {
+        width: 143px;
+    }
+    @include media('max', 'xl') {
+        display: none;
+    }
+    
+    
+}
+.benefits-item {
+    width: 100%;
+    height: 340px;
+    padding: 70px 20px 20px;
+    margin-top: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 25px rgba(179, 179, 179, 0.25);
+    border-radius: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    &::after {
+        content: '';
+        width: 290px;
+        height: 370px;
+        box-sizing: border-box;
+        position: absolute;
+        border: 1px solid rgba(218, 218, 218, 0.5);
+        border-radius: 150px;
+        left: -10px;
+        top: -15px;
+        pointer-events: none;
+    }
+    &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: $main-color;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin: 0 auto 30px;
+        flex-shrink: 0;
+    }
+    span {
+        font-size: 70px;
+        line-height: 85px;
+        color: $main-color;
+        display: block;
+    }
+    p {
+        font-size: 20px;
+        line-height: 26px;
+        color: #939393;
+        margin-top: 5px;
+    } 
+    @include media('max', 'xl') {
+        &::after {
+            width: 225px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    @include media('max', 'sm') {
+        width: calc(100% - 40px);
+        padding: 12px 10px;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        height: auto;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::before {
+            width: 6px;
+            height: 6px;
+            margin: 0;
+            margin-right: 10px;
+        }
+        span {
+            font-size: 25px;
+            line-height: 25px;
+        }
+        p {
+            font-size: 13px;
+            line-height: 15px;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+        &::after {
+            width: calc(100% + 24px);
+            height: calc(100% + 24px);
+            left: -12px;
+            top: -12px;
+        }
+    }
+}

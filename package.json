@@ -12,13 +12,17 @@
     "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Oleksandr Yermolin <oleksandr.yermolin@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "@fancyapps/ui": "^5.0.17",
+    "jquery": "^3.5.1",
+    "jquery-ui-dist": "^1.13.0",
+    "modern-normalize": "^1.1.0",
+    "slick": "^1.12.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

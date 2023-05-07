@@ -1,0 +1,64 @@
+.page-404 {
+    margin: 78px 0 100px;
+    padding: 80px 0;
+    position: relative;
+    background: url('../images/bg/404-bg.jpg') left top no-repeat;
+    background-size: cover;
+    @include media('max', 'sm') {
+        margin: 40px 0;
+        padding: 40px 0;
+    }
+    
+}
+.page-404__content {
+    text-align: center;
+    h1 {
+        font-family: $title;
+        text-transform: uppercase;
+        color: #1B1B1B;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    
+}
+.page-404__counter {
+    font-size: 200px;
+    line-height: 180px;
+    font-family: $title;
+    color: $sub-color;
+    margin: 35px 0;
+    @include media('max', 'sm') {
+        font-size: 70px;
+        line-height: 60px;
+        margin: 20px 0;
+    }
+}
+.page-404__descripter {
+    font-size: 20px;
+    line-height: 24px;
+}
+.page-404__bg {
+    display: block;
+    position: absolute;    
+}
+.page-404_left {
+    position: absolute;
+    left: 0;
+    top: 85px;
+    opacity: 0.5;
+    @include media('max', 'sm') {
+        width: 50px;
+        top: 58px;
+        opacity: 1;
+    }
+    
+}
+.page-404_right {
+    right: 0;
+    top: 0;
+    @include media('max', 'sm') {
+        width: 105px;
+        top: 28px;
+    }
+}

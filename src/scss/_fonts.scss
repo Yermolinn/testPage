@@ -1,0 +1,127 @@
+@mixin fonts($title, $weight, $src, $style: normal) {
+  @font-face {
+    font-family: $title;
+    src: url($src) format("woff2");
+    font-weight: $weight;
+    font-display: auto;
+    font-style: $style;
+  }  
+} 
+
+@include fonts('MyriadPro', 400, '../fonts/MyriadPro/MyriadPro-Regular.woff2');
+
+@include fonts('MazzardH', 400, '../fonts/Mazzard/MazzardH-Regular.woff2');
+@include fonts('MazzardH', 500, '../fonts/Mazzard/MazzardH-Medium.woff2');
+@include fonts('MazzardH', 600, '../fonts/Mazzard/MazzardH-SemiBold.woff2');
+
+@include fonts('MazzardM', 400, '../fonts/Mazzard/MazzardM-Regular.woff2');
+
+$MyriadPro: 'MyriadPro', sans-serif;
+$MazzardH: 'MazzardH', sans-serif;
+$MazzardM: 'MazzardM', sans-serif;
+
+$title: $MyriadPro;
+$main-font: $MazzardH;
+$button-font: 400 14px $MazzardH;
+ 
+@font-face {
+  font-family: 'icon-font';
+  src:  url('../fonts/icon-font/icon-font.eot?zapzd9');
+  src:  url('../fonts/icon-font/icon-font.eot?zapzd9#iefix') format('embedded-opentype'),
+    url('../fonts/icon-font/icon-font.ttf?zapzd9') format('truetype'),
+    url('../fonts/icon-font/icon-font.woff?zapzd9') format('woff'),
+    url('../fonts/icon-font/icon-font.svg?zapzd9#icon-font') format('svg');
+  font-weight: normal;
+  font-display: auto;
+  font-style: normal;
+}
+[class^="fa-"], [class*=" fa-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-step-1:before {
+  content: "\e915";
+}
+.fa-step-2:before {
+  content: "\e916";
+}
+.fa-step-3:before {
+  content: "\e917";
+}
+.fa-step-4:before {
+  content: "\e918";
+}
+.fa-burger:before {
+  content: "\e914";
+}
+.fa-viber-outline:before {
+  content: "\e911";
+}
+.fa-play:before {
+  content: "\e90e";
+}
+.fa-arrow-right:before {
+  content: "\e90d";
+}
+.fa-arrow-down:before {
+  content: "\e900";
+}
+.fa-arrow-next:before {
+  content: "\e901";
+}
+.fa-arrow-prev:before {
+  content: "\e902";
+}
+.fa-calendar:before {
+  content: "\e903";
+}
+.fa-calendar-clock:before {
+  content: "\e904";
+}
+.fa-check:before {
+  content: "\e905";
+}
+.fa-close:before {
+  content: "\e906";
+}
+.fa-down-select:before {
+  content: "\e907";
+}
+.fa-fb:before {
+  content: "\e908";
+}
+.fa-i:before {
+  content: "\e909";
+}
+.fa-inst:before {
+  content: "\e90a";
+}
+.fa-i-outline:before {
+  content: "\e90b";
+}
+.fa-map:before {
+  content: "\e90c";
+}
+.fa-time:before {
+  content: "\e90f";
+}
+.fa-viber:before {
+  content: "\e910";
+}
+.fa-mail:before {
+  content: "\e912";
+}
+.fa-phone:before {
+  content: "\e913";
+}

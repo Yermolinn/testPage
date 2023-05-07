@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="uk"> 
+<head>
+	<meta charset="UTF-8">
+	<title>Анкета</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<!-- Open Graph -->
+	<meta property="og:title" content="UAMF - Study. Travel. Earn"/>
+    <meta property="og:description" content="Вчись Мандруй заробляй"/>
+	<meta property="og:url" content="https://siteurl.ru"/>
+	<meta property="og:image" content="images/logo.svg"/>
+	<!-- End Open Graph -->
+	<link rel="stylesheet" href="../src/style/slick.css">
+	<link rel="stylesheet" href="../src/style/jquery.fancybox.min.css">
+	<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css"> -->
+	<link rel="stylesheet" href="../src/style/main.css?ver=3">
+</head>
+<body class="load">
+	<header class="header">
+		<div class="section-frame header-content">
+			<a href="../src/index.html" class="header-logo">
+				<img src="../src/images/logo.svg" alt="">
+			</a>
+			<div class="header-frame">
+				<div class="header-info">
+					<div class="header-phone header-pc">
+						<div class="header-phone__item">
+							<a href="viber://chat?number=+380972972727" class="header-phone__viber viber_pc">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="viber://add?number=+380972972727" class="header-phone__viber viber_mob">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="tel:+380972972727" class="header-phone__link">+38 (097) 297-27-27</a>
+						</div>
+						<div class="header-phone__item">
+							<a href="viber://chat?number=+380967972727" class="header-phone__viber viber_pc">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="viber://add?number=+380967972727" class="header-phone__viber viber_mob">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="tel:+380967972727" class="header-phone__link">+38 (096) 797-27-27</a>
+						</div>
+					</div>
+					<div class="header-info__list header-pc">
+						<div class="header-info__item">
+							<a href="https://goo.gl/maps/e7vLjPy6F82RAxqS7" target="_blank">
+								<i class="fa-map"></i>
+							</a>
+							<p>Житомир, 10014, Україна <br>
+							вул. Басейна 2А, поверх 2, офіс 1</p>
+						</div>
+						<div class="header-info__item">
+							<i class="fa-time"></i>
+							<p>Понеділок - п'ятниця <br>
+							9:00 - 17:00</p>
+						</div>
+					</div>
+					<div class="language header-pc">
+						<div class="language-active">
+							<p>Укр</p>
+							<i class="fa-arrow-down"></i>
+						</div>
+						<ul class="language-list">
+							<li><a href="#">РУС</a></li>
+							<li><a href="#">EN</a></li>
+						</ul>
+					</div>
+					<a href="questionnaire.html" class="header-btn">
+						<span>Анкета</span>
+						<i class="fa-arrow-right"></i>
+					</a>
+					<div class="burger">
+						<i class="fa-burger"></i>
+						<i class="fa-close"></i>
+					</div>
+				</div>
+				<div class="header-link header-pc">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="vacancies.html">Вакансії</a></li>
+							<li><a href="employer.html">Для роботодавця</a></li>
+							<li><a href="about.html">Про нас</a></li>
+							<li><a href="contact.html">Контакти</a></li>
+						</ul>
+					</nav>
+					<ul class="header-social">
+						<li>
+							<a href="#" class="header-social_fb" target="_blank">
+								<i class="fa-fb"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social_inst" target="_blank">
+								<i class="fa-inst"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social_viber" target="_blank">
+								<i class="fa-viber"></i>
+							</a>
+						</li>
+					</ul>
+				</div> 
+			</div>
+		</div>
+		<div class="header-mob">
+			<div class="section-frame">
+				<nav class="header-menu">
+					<ul>
+						<li><a href="vacancies.html">Вакансії</a></li>
+						<li><a href="employer.html">Для роботодавця</a></li>
+						<li><a href="about.html">Про нас</a></li>
+						<li><a href="contact.html">Контакти</a></li>
+					</ul>
+				</nav>
+				<div class="header-mob__social">
+					<ul class="header-social">
+						<li>
+							<a href="#" class="header-social_fb" target="_blank">
+								<i class="fa-fb"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social_inst" target="_blank">
+								<i class="fa-inst"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="header-social_viber" target="_blank">
+								<i class="fa-viber"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="language">
+						<div class="language-active">
+							<p>Укр</p>
+							<i class="fa-arrow-down"></i>
+						</div>
+						<ul class="language-list">
+							<li><a href="#">РУС</a></li>
+							<li><a href="#">EN</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-mob__content">
+					<div class="header-phone">
+						<div class="header-phone__item">
+							<a href="viber://chat?number=+380972972727" class="header-phone__viber viber_pc">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="viber://add?number=+380972972727" class="header-phone__viber viber_mob">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="tel:+380972972727" class="header-phone__link">+38 (097) 297-27-27</a>
+						</div>
+						<div class="header-phone__item">
+							<a href="viber://chat?number=+380967972727" class="header-phone__viber viber_pc">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="viber://add?number=+380967972727" class="header-phone__viber viber_mob">
+								<i class="fa-viber"></i>
+							</a>
+							<a href="tel:+380967972727" class="header-phone__link">+38 (096) 797-27-27</a>
+						</div>
+					</div>
+					<div class="header-info__list">
+						<div class="header-info__item">
+							<a href="https://goo.gl/maps/e7vLjPy6F82RAxqS7" target="_blank">
+								<i class="fa-map"></i>
+							</a>
+							<p>Житомир, 10014, Україна <br>
+							вул. Басейна 2А, поверх 2, офіс 1</p>
+						</div>
+						<div class="header-info__item">
+							<i class="fa-time"></i>
+							<p>Понеділок - п'ятниця <br>
+							9:00 - 17:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>	
+    <main>
+		<div id="questionnaire" class="questionnaire">
+			<div class="section-frame">
+				<div class="questionnaire-title">
+					<h1>Анкета</h1>
+					<p>Для участі <br>
+					у программах <span>UAMF</span></p>
+				</div>
+				<div class="questionnaire-steps">
+					<div class="questionnaire-steps__content">
+						<div class="questionnaire-steps__item questionnaire-step_active" data-index="1">
+							<i class="fa-step-1 questionnaire-steps__icon"></i>
+							<p>Особиста інформація</p>
+						</div>
+						<div class="questionnaire-steps__item" data-index="2">
+							<i class="fa-step-2 questionnaire-steps__icon"></i>
+							<p>Освіта та знання мов</p>
+						</div>
+						<div class="questionnaire-steps__item" data-index="3">
+							<i class="fa-step-3 questionnaire-steps__icon"></i>
+							<p>Попередні місця</p>
+						</div>
+						<div class="questionnaire-steps__item" data-index="4">
+							<i class="fa-step-4 questionnaire-steps__icon"></i>
+							<p>Додаткова інформація</p>
+						</div>
+					</div>
+				</div>
+				<form action="#" method="POST" enctype="multipart/form-data" class="questionnaire-list">
+					<div class="questionnaire-list__step questionnaire-list__step-active" data-step="1">
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">Особиста інформація</p>
+							<div class="questionnaire-item__content questionnaire-item_flex">
+								<div class="questionnaire-photo">
+									<div class="questionnaire-photo__frame">
+										<img src="images/questionnaire-photo.svg" alt="">
+									</div>
+									<label class="questionnaire-photo__save">
+										<input type="file" name="photo">
+										<span>Завантажити фото</span>
+									</label>
+								</div>
+								<div class="questionnaire-frame">
+									<div class="questionnaire-line questionnaire-line_duble">
+										<div class="questionnaire-line__item">
+											<label for="name" class="questionnaire-input__title" >Прізвище, ім'я та по батькові*</label>
+											<div class="questionnaire-input">
+												<input type="text" name="name" id="name" placeholder="Прізвище, ім'я та по батькові">
+											</div>
+										</div>
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Попереднє прізвище*</p>
+											<div class="questionnaire-input">
+												<input type="text" name="lastName" placeholder="Попереднє прізвище">
+											</div>
+										</div>
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Дата народження*</p>
+											<div class="questionnaire-input">
+												<input type="date" name="age" class="input-date" placeholder="Дата народження*">
+												<i class="fa-calendar questionnaire-input__icon"></i>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line">
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Повна адреса*</p>
+											<div class="questionnaire-input">
+												<input type="text" name="address" placeholder="Повна адреса">
+												<div class="questionnaire-input__descriptor">
+													<i class="fa-step-4"></i>
+													<p class="questionnaire-input__descriptor_325">Вкажіть назву вулиці, номери будинку та квартири, населений пункт (місто, село), район та область   </p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line questionnaire-line_duble">
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Телефон*</p>
+											<div class="questionnaire-input">
+												<input type="text" name="phone-1" class="input-mask" placeholder="Телефон">
+												<div class="questionnaire-messege js-checkbox">
+													<div class="questionnaire-messege__check">
+														<input type="checkbox"  name="phone-1-messenger" value="Viber">
+														<i class="fa-check"></i>	
+													</div>
+													<i class="fa-viber questionnaire-messege__icon"></i>
+												</div>
+											</div>
+										</div>
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Телефон</p>
+											<div class="questionnaire-input">
+												<input type="text" name="phone-2" class="input-counter" placeholder="Телефон">
+												<div class="questionnaire-messege js-checkbox">
+													<div class="questionnaire-messege__check">
+														<input type="checkbox" name="phone-2-messenger" value="Viber">
+														<i class="fa-check"></i>	
+													</div>
+													<i class="fa-viber questionnaire-messege__icon"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line questionnaire-line_duble">
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Електронна адреса</p>
+											<div class="questionnaire-input">
+												<input type="email" name="email" placeholder="Електронна адреса">
+											</div>
+										</div>
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Facebook/Instagram</p>
+											<div class="questionnaire-input">
+												<input type="text" name="social" placeholder="Facebook/Instagram">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">Родичі</p>
+							<div class="questionnaire-item__content">
+								<div class="questionnaire-line questionnaire-line_duble">
+									<div class="questionnaire-line__group questionnaire_border">
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">ПІБ батька</p>
+											<div class="questionnaire-input">
+												<input type="text" name="father" placeholder="Прізвище, ім'я та по батькові">
+											</div>
+										</div>
+										<div class="questionnaire-line__sub-duble">
+											<div class="questionnaire-line__item">
+												<p class="questionnaire-input__title">Дата народження батька</p>
+												<div class="questionnaire-input">
+													<input type="text" name="father-age" class="input-date" placeholder="Дата народження">
+													<i class="fa-calendar questionnaire-input__icon"></i>
+												</div>
+											</div>
+											<div class="questionnaire-line__item">
+												<p class="questionnaire-input__title">Телефон батька</p>
+												<div class="questionnaire-input">
+													<input type="text" name="father-phone" class="input-mask" placeholder="Телефон">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line__group">
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">ПІБ матері</p>
+											<div class="questionnaire-input">
+												<input type="text" name="mother" placeholder="ПІБ матері*">
+											</div>
+										</div>
+										<div class="questionnaire-line__sub-duble">
+											<div class="questionnaire-line__item">
+												<p class="questionnaire-input__title">Дата народження матері</p>
+												<div class="questionnaire-input">
+													<input type="text" name="mother-age" class="input-date" placeholder="Дата народження">
+													<i class="fa-calendar questionnaire-input__icon"></i>
+												</div>
+											</div>
+											<div class="questionnaire-line__item">
+												<p class="questionnaire-input__title">Телефон матері</p>
+												<div class="questionnaire-input">
+													<input type="text" name="mother-phone" class="input-mask" placeholder="Телефон">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="questionnaire-input__title">Сімейний стан*</p>
+								<div class="questionnaire-line questionnaire-line_three">
+									<div class="questionnaire-check marriage-false js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="marriage" value="Неодружений(а)">
+											<i class="fa-check"></i>
+										</div>
+										<p>Неодружений(а)</p>
+									</div>
+									<div class="questionnaire-check marriage-true js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="marriage" value="Одружений(а)">
+											<i class="fa-check"></i>
+										</div>
+										<p>Одружений(а)</p>
+									</div>
+									<div class="questionnaire-check marriage-false js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="marriage" value="Розлучений(а)">
+											<i class="fa-check"></i>
+										</div>
+										<p>Розлучений(а)</p>
+									</div>
+								</div>
+								<div class="questionnaire-line questionnaire-line_duble marriage-hide">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">ПIБ дружини/чоловіка</p>
+										<div class="questionnaire-input">
+											<input type="text" name="name-marriage" placeholder="ПIБ дружини/чоловіка">
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Попереднє прізвище</p>
+										<div class="questionnaire-input">
+											<input type="text" name="last-name-marriage" placeholder="Попереднє прізвище">
+										</div>
+									</div>
+									<div class="questionnaire-line__sub-duble questionnaire-line-no-margin">
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Дата народження</p>
+											<div class="questionnaire-input">
+												<input type="text" name="marriage-age" class="input-date" placeholder="Дата народження">
+												<i class="fa-calendar questionnaire-input__icon"></i>
+											</div>
+										</div>
+										<div class="questionnaire-line__item">
+											<p class="questionnaire-input__title">Дата одруження</p>
+											<div class="questionnaire-input">
+												<input type="text" name="marriage-age" class="input-date" placeholder="Дата одруження">
+												<i class="fa-calendar questionnaire-input__icon"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line__copy">
+									<p class="questionnaire-input__title">Наявність дітей*</p>
+									<div class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
+										<div class="questionnaire-check check-child_false js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="child" value="Ні">
+												<i class="fa-check"></i>
+											</div>
+											<p>Ні</p>
+										</div>
+										<div class="questionnaire-check check-child_true js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="child" value="Так">
+												<i class="fa-check"></i>
+											</div>
+											<p>Так</p>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-copy-frame ">
+									<div class="questionnaire-copy__list questionnaire-copy_child">
+										<div class="questionnaire-line questionnaire-line_three questionnaire-line_child" data-child="1">
+											<div class="questionnaire-line__item">
+											  <p class="questionnaire-input__title">ПІБ дитини*</p>
+											  <div class="questionnaire-input">
+												<input type="text" name="child-name[]" placeholder="ПІБ дитини">
+											  </div>
+											</div>
+											<div class="questionnaire-line__item">
+											  <p class="questionnaire-input__title">Дата народження*</p>
+											  <div class="questionnaire-input">
+												<input type="text" name="child-age[]" class="input-date" placeholder="Дата народження">
+												<i class="fa-calendar questionnaire-input__icon"></i>
+											  </div>
+											</div>
+											<div class="questionnaire-delete">
+											  <div class="questionnaire-delete__content">
+												<div class="questionnaire-delete__icon"></div>
+												<p>Видалити запис</p>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-add">
+										<div class="questionnaire-add__icon"></div>
+										<p>Додати запис про дитину</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="questionnaire-list__step" data-step="2">
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">Освіта</p>
+							<div class="questionnaire-item__content">
+								<div class="questionnaire-line questionnaire-line__copy">
+									<p class="questionnaire-input__title">Ви студент?*</p>
+									<div class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
+										<div class="questionnaire-check check-child_false js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Ні">
+												<i class="fa-check"></i>
+											</div>
+											<p>Ні</p>
+										</div>
+										<div class="questionnaire-check check-child_true js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Так">
+												<i class="fa-check"></i>
+											</div>
+											<p>Так</p>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line questionnaire-line__copy ">
+									<p class="questionnaire-input__title">Чи є у вас попередня освіта у вищому навчальному закладі?*</p>
+									<div class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
+										<div class="questionnaire-check check-child_false js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="education" value="Ні">
+												<i class="fa-check"></i>
+											</div>
+											<p>Ні</p>
+										</div>
+										<div class="questionnaire-check check-child_true js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="education" value="Так">
+												<i class="fa-check"></i>
+											</div>
+											<p>Так</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">Знання іноземних мов</p>
+							<div class="questionnaire-item__content">
+								<p class="questionnaire-input__title">Англійська*</p>
+								<div class="questionnaire-line questionnaire-line_four">
+									<div class="questionnaire-check js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="lang[]" value="Не володію">
+											<i class="fa-check"></i>
+										</div>
+										<p>Не володію</p>
+									</div>
+									<div class="questionnaire-check js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="lang[]" value="Базові знання">
+											<i class="fa-check"></i>
+										</div>
+										<p>Базові знання</p>
+									</div>
+									<div class="questionnaire-check js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="lang[]" value="Розмовна">
+											<i class="fa-check"></i>
+										</div>
+										<p>Розмовна</p>
+									</div>
+									<div class="questionnaire-check js-checkbox">
+										<div class="questionnaire-check__icon">
+											<input type="radio" name="lang[]" value="Вільне володіння">
+											<i class="fa-check"></i>
+										</div>
+										<p>Вільне володіння</p>
+									</div>
+								</div>
+								<div class="questionnaire-add">
+									<div class="questionnaire-add__icon"></div>
+									<p>Додати іноземну мову</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="questionnaire-list__step" data-step="3">
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">Місця роботи</p>
+							<div class="questionnaire-item__content">
+								<b class="questionnaire-item__title-main">Будь-ласка, вкажіть всі місця роботи ,  у тому числі закордоном</b>
+								<div class="questionnaire-line questionnaire-line_duble">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Назва організації</p>
+										<div class="questionnaire-input">
+											<input type="text" name="company">
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Контактна особа</p>
+										<div class="questionnaire-input">
+											<input type="text" name="preson">
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Адреса</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+											<div class="questionnaire-input__descriptor">
+												<i class="fa-step-4"></i>
+												<p class="questionnaire-input__descriptor_485">Вкажіть максимально повну адресу підприємства, на якому ви працювали. Якщо детальна інформація не збереглася, вкажіть, як мінімум, країну та місто розташування підприємства</p>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Телефони</p>
+										<div class="questionnaire-input">
+											<input type="text" name="phone" class="input-counter">
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Робочі обов’язки</p>
+										<div class="questionnaire-input">
+											<input type="text" name="responsibilities ">
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line questionnaire-line_work">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Період роботи</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+											<div class="questionnaire-input__descriptor">
+												<i class="fa-step-4"></i>
+												<p class="questionnaire-input__descriptor_325">Вкажіть максимально точно період роботи на даному підприємстві </p>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Паперові рекомендації</p>
+										<div class="questionnaire-group-check">
+											<div class="questionnaire-check js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="radio" name="recommendations[]" value="Маю">
+													<i class="fa-check"></i>
+												</div>
+												<p>Маю</p>
+											</div>
+											<div class="questionnaire-check js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="radio" name="recommendations[]" value="Не маю">
+													<i class="fa-check"></i>
+												</div>
+												<p>Не маю</p>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-delete">
+										<div class="questionnaire-delete__content">
+										  <div class="questionnaire-delete__icon"></div>
+										  <p>Видалити запис</p>
+										</div>
+									  </div>
+								</div>
+								<div class="questionnaire-add">
+									<div class="questionnaire-add__icon"></div>
+									<p>Додати місце роботи</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="questionnaire-list__step" data-step="4">
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">робота з технікою та інші навички</p>
+							<div class="questionnaire-item__content">
+								<div class="questionnaire-line questionnaire-line_flex">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Відкриті категорії посвідчення водія </p>
+										<div class="questionnaire-group-flex">
+											<div class="questionnaire-checkbox js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="checkbox" name="driver[]" value="A">
+													<i class="fa-check"></i>
+												</div>
+												<p>A</p>
+											</div>
+											<div class="questionnaire-checkbox js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="checkbox" name="driver[]" value="B">
+													<i class="fa-check"></i>
+												</div>
+												<p>B</p>
+											</div>
+											<div class="questionnaire-checkbox js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="checkbox" name="driver[]" value="C">
+													<i class="fa-check"></i>
+												</div>
+												<p>C</p>
+											</div>
+											<div class="questionnaire-checkbox js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="checkbox" name="driver[]" value="D">
+													<i class="fa-check"></i>
+												</div>
+												<p>D</p>
+											</div>
+											<div class="questionnaire-checkbox js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="checkbox" name="driver[]" value="E">
+													<i class="fa-check"></i>
+												</div>
+												<p>E</p>
+											</div>
+											<div class="questionnaire-checkbox js-checkbox">
+												<div class="questionnaire-check__icon">
+													<input type="checkbox" name="driver[]" value="Трактор">
+													<i class="fa-check"></i>
+												</div>
+												<p>Трактор</p>
+											</div>
+										</div>
+									</div>
+									<div class="questionnaire-line__item questionnaire-line__item_right">
+										<p class="questionnaire-input__title">Досвід керування</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+											<div class="questionnaire-input__descriptor">
+												<i class="fa-step-4"></i>
+												<p class="questionnaire-input__descriptor_440">Вкажіть реальний досвід керування транспортними засобами (може бути відмінним від періоду володіння посвідченням водія)</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Досвід роботи з спеціалізованою технікою</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+											<div class="questionnaire-input__descriptor">
+												<i class="fa-step-4"></i>
+												<p class="questionnaire-input__descriptor_440">Опишіть детально, з якою спеціалізованою технікою ви працювали (трактор, комбайн, лісовоз, харвестер, причіпне та навісне обладнання, навантажувач тощо) та які саме технологічні операції виконували</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Інші навички</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+											<div class="questionnaire-input__descriptor">
+												<i class="fa-step-4"></i>
+												<p class="questionnaire-input__descriptor_485">Опишіть детально, якими додатковими корисними навичками ви володієте (будівництво, зварювання, ремонт техніки, валка лісу тощо)</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="questionnaire-item">
+							<p class="questionnaire-item__title">Додаткова інформація</p>
+							<div class="questionnaire-item__content">
+								<div class="questionnaire-line questionnaire-line_three">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Зріст*</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Вага*</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+										</div>
+									</div>
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Розмір взуття*</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Захоплення</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line">
+									<p class="questionnaire-input__title">Паління*</p>
+									<div class="questionnaire-group-three">
+										<div class="questionnaire-check js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="driver[]" value="Не палю">
+												<i class="fa-check"></i>
+											</div>
+											<p>Не палю</p>
+										</div>
+										<div class="questionnaire-check js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="driver[]" value="Іноді">
+												<i class="fa-check"></i>
+											</div>
+											<p>Іноді</p>
+										</div>
+										<div class="questionnaire-check js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="driver[]" value="Палю">
+												<i class="fa-check"></i>
+											</div>
+											<p>Палю</p>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line questionnaire-line__copy">
+									<p class="questionnaire-input__title">Хронічні захворювання, алергії*</p>
+									<div class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
+										<div class="questionnaire-check check-child_false js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Не має">
+												<i class="fa-check"></i>
+											</div>
+											<p>Не має</p>
+										</div>
+										<div class="questionnaire-check check-child_true js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Маю">
+												<i class="fa-check"></i>
+											</div>
+											<p>Маю</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="questionnaire-item questionnaire-item_last">
+							<p class="questionnaire-item__title">інформація щодо віїзду за кордон</p>
+							<div class="questionnaire-item__content">
+								<div class="questionnaire-line questionnaire-line__copy">
+									<p class="questionnaire-input__title">Наявність біометричного паспорта*</p>
+									<div class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
+										<div class="questionnaire-check check-child_true js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Маю">
+												<i class="fa-check"></i>
+											</div>
+											<p>Маю</p>
+										</div>
+										<div class="questionnaire-check check-child_false js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Не має">
+												<i class="fa-check"></i>
+											</div>
+											<p>Не має</p>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line questionnaire-line__copy">
+									<p class="questionnaire-input__title">Обмеження на виїзд з України та в’їзд в інші країни </p>
+									<div class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
+										<div class="questionnaire-check check-child_false js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Не має">
+												<i class="fa-check"></i>
+											</div>
+											<p>Не має</p>
+										</div>
+										<div class="questionnaire-check check-child_true js-checkbox">
+											<div class="questionnaire-check__icon">
+												<input type="radio" name="student" value="Є, а саме">
+												<i class="fa-check"></i>
+											</div>
+											<p>Є, а саме</p>
+										</div>
+									</div>
+								</div>
+								<div class="questionnaire-line">
+									<div class="questionnaire-line__item">
+										<p class="questionnaire-input__title">Коментар</p>
+										<div class="questionnaire-input">
+											<input type="text" name="companyAddress">
+											<div class="questionnaire-input__descriptor">
+												<i class="fa-step-4"></i>
+												<p class="questionnaire-input__descriptor_440">За бажанням, ви можете уточнити інформацію, надати додаткові дані, висловити свої побажання щодо роботи (терміни та регіони роботи, працевлаштування разом з друзями або родичами)</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="questionnaire-politics js-checkbox">
+							<div class="questionnaire-check__icon">
+								<input type="checkbox" name="politics" value="Згоден">
+								<i class="fa-check"></i>
+							</div>
+							<p>Даю згоду на обробку моїх персональних даних з первинних джерел у такому обсязі: особисті відомості, біографічні довідки, номери телефонів, дані про зареєстроване або фактичне місце проживання, відомості про освіту, професію, спеціальність та кваліфікацію, трудову діяльність та паспортні дані</p>
+						</div>
+					</div>
+					<div class="questionnaire-btn">
+						<a href="#" class="questionnaire-btn__prev">Назад</a>
+						<a href="#" class="questionnaire-btn__next">ДАЛІ</a>
+						<label class="questionnaire-sub">
+							<span>Відправити</span>
+							<input type="submit">
+						</label>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</main>
+    <footer class="footer">
+        <div class="section-frame footer-content">
+            <div class="footer-info">
+                <a href="/" class="footer-logo">
+                    <img src="images/logo-white.svg" alt="">
+                </a>
+                <ul class="footer-social">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-fb"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-inst"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-viber-outline"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-fb"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="fa-inst"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="footer-link">
+				<li><a href="vacancies.html">Вакансії</a></li>
+				<li><a href="employer.html">Для роботодавця</a></li>
+			</ul>
+			<ul class="footer-link">
+				<li><a href="about.html">Про нас</a></li>
+				<li><a href="contact.html">Контакти</a></li>
+			</ul>
+            <div class="footer-description">
+                <div class="footer-description__item">
+                    <i class="fa-map"></i>
+                    <p>Житомир, 10014, Україна <br>
+                    вул. Басейна 2А, поверх 2, офіс 1</p>
+                </div>
+                <div class="footer-description__item">
+                    <i class="fa-time"></i>
+                    <p>Понеділок - п'ятниця <br>
+                    9:00 - 17:00</p>
+                </div>
+                <div class="footer-description__item">
+                    <i class="fa-viber"></i>
+                    <a href="tel:+380972972727">+38 (097) 297-27-27</a>
+                </div>
+                <div class="footer-description__item">
+                    <i class="fa-viber"></i>
+                    <a href="tel:+380967972727">+38 (096) 797-27-27</a>
+                </div>
+            </div>
+            <div class="footer-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10203.742778530232!2d28.6559835!3d50.2557853!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xba1b2f3991c61eea!2sUAYF!5e0!3m2!1sru!2sru!4v1641305334775!5m2!1sru!2sru" class="footer-map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <a href="https://youtu.be/mhiPvkL_c2g" data-fancybox class="footer-frame__video">
+                    <img src="../src/images/video-footer.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="../src/js/jquery.min.js" type="module"></script> -->
+    <!-- <script src="../src/js/jquery.maskedinput.min.js" type="module"></script> -->
+    <script src="../src/js/jquery.fancybox.min.js" type="module"></script>
+    <!-- <script src="../src/js/sweetalert.min.js" type="module"></script> -->
+    <script src="../src/js/slick.min.js" type="module"></script>
+	<!-- <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
+	<!-- <script src="../src/js/datepicker-ru.js" type="module"></script> -->
+    <!-- <script src="../src/js/core.js" type="module"></script> -->
+    <!-- <script src="../src/js/common.js" type="module"></script> -->
+
+
+</body>
+</html>

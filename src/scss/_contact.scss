@@ -1,0 +1,215 @@
+.contact {
+    padding: 65px 0 85px;
+    @include media('max', 'xl') {
+        padding: 40px 0;
+    }
+}
+.contact-frame {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    @include media('max', 'xl') {
+        display: block;
+        margin-top: 20px;
+    }   
+}
+.contact-list {
+    width: 695px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    @include media('max', 'xl') {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.contact-item {
+    padding: 36px 38px; 
+    margin-bottom: 20px;
+    background: #F6F6F6;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    &:nth-child(1) {
+        background-image: url('../images/bg/contact/contact-1.png');
+    }
+    &:nth-child(2) {
+        background-image: url('../images/bg/contact/contact-2.png');
+    }
+    &:nth-child(3) {
+        background-image: url('../images/bg/contact/contact-5.png');
+    }
+    &:nth-child(4) {
+        background-image: url('../images/bg/contact/contact-2.png');
+    }
+    &:nth-child(5) {
+        background-image: url('../images/bg/contact/contact-5.png');
+    }
+    &:nth-child(6) {
+        background-image: url('../images/bg/contact/contact-6.png');
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include media('max', 'sm') {
+        padding: 10px 20px 15px; 
+        background: #F6F6F6 !important;
+    } 
+    
+}
+.contact-content {
+    @include media('max', 'sm') {
+        margin-top: 20px;
+    }
+    
+}
+.contact-item__title {
+    color: #1B1B1B;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 30px;
+    font-family: $title;
+    @include media('max', 'sm') {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}
+.contact-item__list {
+    margin-top: 20px;
+    @include media('max', 'sm') {
+        margin-top: 10px;
+    }
+    
+}
+.contact-item__icon {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    i {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        background-color: $main-color;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        flex-shrink: 0;
+        &::before {
+            margin-left: 1px;
+        }
+    }
+    .fa-time, .fa-mail, .fa-phone {
+        font-size: 9px;
+    }
+    p, a {
+        font-size: 16px;
+        line-height: 19px;
+        font-family: $MazzardM;
+    }
+    a {
+        display: block;
+        @include line($text-color);
+        margin-top: 3px;
+    }
+    b {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 3px;
+        margin-left: 20px;
+    }
+    @include media('max', 'sm') {
+        p, a, b {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    a, b, p {
+        margin-top: 3px;
+    }
+    b {
+        margin-left: 10px;
+    }
+}
+.contact-map {
+    width: 100%;
+    display: block;
+    height: 340px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    @include media('max', 'sm') {
+        height: 230px;
+    }  
+}
+.contact-photo {
+    width: 100%;
+    height: 384px;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    @include media('max', 'sm') {
+        height: 255px;
+    }  
+}
+.contact-video {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(2, 51, 51, 0.69) 0%, rgba(2, 51, 51, 0.1) 106.04%);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    p {
+        max-width: 200px;
+        padding: 9px 20px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        b {
+            font-weight: 600;
+        }
+    }
+    @include media('max', 'sm') {
+        height: 275px;
+    }  
+}
+.contact-video__photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.contact-video__icon {
+    position: absolute;
+    transition: .4s;
+    &:hover {
+        transform: scale(1.1);
+    }
+    @include media('max', 'sm') {
+        img {
+            width: 53px;
+        }
+    }
+    
+}

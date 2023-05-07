@@ -1,0 +1,143 @@
+@import 'fonts';
+@import 'normaliz';
+
+// Главные цвета сайта
+
+$main-color: #C99E78;
+$sub-color: #023333;
+
+// Цвет текста
+$title-color: #023333;
+$text-color: #353535;
+
+// Цвет кнопок
+
+$button-color: #023333;
+$button-bg: #fff;
+
+// Размер контентной части
+
+$frame: 1200px;
+
+@import 'snippets/main-snippets';
+
+%page-frame {
+	padding: 100px 0;
+	@include media("max", "md") {
+		padding: 70px 0;
+	}
+	@include media("max", "sm") {
+		padding: 50px 0;
+	}
+}
+* {
+	&::selection {
+		color: #fff; /* Цвет текста */
+    	background: $main-color; /* Цвет фона */
+	}
+}
+html, body {
+	position: relative;
+	min-height: 100vh; 
+}
+body { 
+	min-width: 320px;
+	color: $text-color;
+	font: normal 18px/1.5 $main-font;
+}
+main {
+	padding-top: 140px;
+	@include media('max', 'xl') {
+		padding-top: 80px;
+	}
+	
+}
+h1,h2,h3,h4,h5,h6, p {
+	margin: 0;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+}
+h1,h2,h3,h4,h5,h6 { 
+	color: $title-color;
+	font-family: $title;
+}
+ul, ol { 
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+	&::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+}
+form {
+	box-sizing: border-box;
+}
+input {
+	outline: none;
+	box-sizing: border-box;
+}
+input[type="submit"] {
+	cursor: pointer;
+}
+textarea {
+	box-sizing: border-box;
+	outline: none;
+}
+select, option {
+	outline: none;
+	cursor: pointer;
+	appearance: none;
+}
+select::-ms-expand { 
+    display: none;
+}
+img {
+	&::selection {
+		color: inherit; /* Цвет текста */
+    	background: transparent; /* Цвет фона */
+	}
+}
+label {
+	cursor: pointer;
+	margin-bottom: 0;
+}
+.section-frame { 
+	max-width: $frame;
+	width: 100%; 
+	margin: 0 auto;
+	box-sizing: border-box;
+	@include media("max", "xl") {
+		max-width: 700px;
+	}
+	@include media("max", "sm") {
+		max-width: 375px;
+		padding: 0 20px;
+	}
+} 
+
+.load * {  
+  transition: none !important;
+}
+.open-frame	{
+	overflow: hidden;
+} 
+
+ @import 'header';
+ @import 'footer';
+ @import 'main-page';
+ @import 'politics';
+ @import 'popup';
+ @import 'vacancies';
+ @import 'contact';
+ @import 'thanks';
+ @import '404';
+ @import 'employer';
+ @import 'about';
+ @import 'questionnaire';
