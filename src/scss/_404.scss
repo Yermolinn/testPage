@@ -4,10 +4,10 @@
     position: relative;
     background: url('../images/bg/404-bg.jpg') left top no-repeat;
     background-size: cover;
-    @include media('max', 'sm') {
-        margin: 40px 0;
-        padding: 40px 0;
-    }
+    // @include mudak('max', 'sm') {
+    //     margin: 40px 0;
+    //     padding: 40px 0;
+    // }
     
 }
 .page-404__content {
@@ -28,11 +28,11 @@
     font-family: $title;
     color: $sub-color;
     margin: 35px 0;
-    @include media('max', 'sm') {
-        font-size: 70px;
-        line-height: 60px;
-        margin: 20px 0;
-    }
+    // @include mudak('max', 'sm') {
+    //     font-size: 70px;
+    //     line-height: 60px;
+    //     margin: 20px 0;
+    // }
 }
 .page-404__descripter {
     font-size: 20px;
@@ -47,18 +47,15 @@
     left: 0;
     top: 85px;
     opacity: 0.5;
-    @include media('max', 'sm') {
-        width: 50px;
-        top: 58px;
-        opacity: 1;
-    }
+    // @include mudak('max', 'sm') {
+    //     width: 50px;
+    //     top: 58px;
+    //     opacity: 1;
+    // }
     
 }
 .page-404_right {
     right: 0;
     top: 0;
-    @include media('max', 'sm') {
-        width: 105px;
-        top: 28px;
-    }
+    
 }

@@ -1,23 +1,23 @@
 .vacancies {
     padding: 90px 0 100px;
     background: url('../images/bg/vacancies-bg-left.png') top 75px left no-repeat, url('../images/bg/vacancies-bg-right.png') top right no-repeat;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         background: none;
     } 
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 40px 0;
     }
     
 }
 .vacancies-frame {
     margin-top: 40px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 20px;
     }
 }
 .vacancies-filter {
     @include grid(4, 20px, 20px, 2);
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         grid-gap: 15px;
     }
     
@@ -28,7 +28,7 @@
     line-height: 19px;
     margin-bottom: 8px;
     color: #000;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 13px;
         line-height: 16px;
     }
@@ -67,7 +67,7 @@
         font-size: 8px;
         transition: .3s;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         height: 44px;
         p {
             font-size: 13px;
@@ -99,7 +99,7 @@
             font-weight: 600;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 13px;
         li {
             margin-bottom: 7px;
@@ -127,7 +127,7 @@
     &:hover {
         transform: scale(1.03);
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         flex-direction: column;
         padding: 5px;
         padding-bottom: 11px;
@@ -145,12 +145,12 @@
     flex-shrink: 0;
     border-radius: 5px;
     margin-right: 33px;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         width: 100%;
         height: 300px;
         object-position: top;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         height: 220px;
     }
     
@@ -161,11 +161,11 @@
     display: flex;
     align-items: flex-start;
     box-sizing: border-box;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         padding: 0 5px;
         margin-top: 20px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: block;
     }
     
@@ -174,7 +174,7 @@
     width: 170px;
     flex-shrink: 0;
     margin-right: 33px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 100%;
         margin-right: 0;
     }
@@ -188,7 +188,7 @@
         margin-top: 12px;
         display: block;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -238,7 +238,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: block;
         margin-top: 15px;
     }
@@ -254,7 +254,7 @@
     &:nth-child(3) {
         width: 150px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 100% !important;
         display: flex;
         align-items: center;
@@ -285,7 +285,7 @@
     line-height: 17px;
     color: $sub-color;
     margin-top: 10px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 0;
         margin-left: 5px;
         font-size: 13px;
@@ -295,7 +295,7 @@
 .vacancies-characteristic_price {
     font-size: 18px;
     font-weight: 600;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 13px;
     }
     
@@ -305,7 +305,7 @@
     font-size: 12px;
     line-height: 14px;
     margin-top: 11px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: none;
     }
     
@@ -327,7 +327,7 @@
         font-family: $title;
         color: $sub-color;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 10px;
     }
     
@@ -336,7 +336,7 @@
     padding: 90px 0 95px;
     background: url('../images/bg/vacancies-single-bg.png') left bottom no-repeat;
     position: relative;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 40px 0;
         background: none;
     }
@@ -345,7 +345,7 @@
 .vacancies-single_inactive {
     background: url('../images/bg/vacancies-single-inactive-bg.png') left bottom no-repeat;
     position: relative;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         background: none;
         padding-top: 70px;
     }
@@ -387,7 +387,7 @@
         color: #fff;
         text-transform: uppercase;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 10px 0;
         font-size: 16px;
     }
@@ -399,7 +399,7 @@
     padding-bottom: 15px;
     border-bottom: 2px solid #ECECEC;
     margin-bottom: 40px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: block;
         margin-bottom: 20px;
     }
@@ -424,7 +424,7 @@
         font-family: $MazzardH;
         margin-right: 20px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         h1 {
             margin-right: 0;
             font-size: 30px;
@@ -447,7 +447,7 @@
         margin-top: 7px;
         text-align: right;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding-left: 44px;
         margin-top: 9px;
         p {
@@ -466,7 +466,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         display: block;
     }
     
@@ -477,7 +477,7 @@
     margin-right: 20px;
     position: sticky;
     top: 30px;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         position: static;
         width: 100%;
         margin-bottom: 20px;
@@ -517,12 +517,12 @@
         left: 0;
         box-sizing: border-box;
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         img {
             height: 460px;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         img {
             height: 225px;
         }
@@ -540,7 +540,7 @@
     color: #353535;
     margin-top: 25px;
     display: block;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
 
     }
     
@@ -564,7 +564,7 @@
         color: #3A3A3A;
         font-size: 18px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         span {
             font-size: 16px;
         }
@@ -575,7 +575,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #3A3A3A;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 12px;
     }
     
@@ -606,7 +606,7 @@
         color: #5A5A5A;
         margin-bottom: 20px;               
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-bottom: 25px;
         h3 {
             font-size: 18px;
@@ -628,7 +628,7 @@
 .vacancies-single__btn {
     @include fill-button(198px, 46px); 
     margin: 0 auto;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 276px;
     }
     

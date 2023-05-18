@@ -1,7 +1,13 @@
 .about_employer {
-    padding: 60px 0;
+    // padding: 60px 0;
     background: none;
-    @include media('max', 'sm') {
+@include mobile {
+        padding: 40px 0;
+    }
+
+    @include tablet {}
+
+    @include desktop {
         padding: 40px 0;
     }
     
@@ -12,14 +18,14 @@
 }
 .hire {
     padding: 177px 0 100px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 100px 0 40px;
     }
     
 }
 .beautiful-frame {
     transform: translateY(90px);
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         transform: translateY(40px);
     }
     
@@ -54,7 +60,7 @@
         left: 6px;
         top: 6px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: flex;
         align-items: flex-start;
         padding: 25px 20px 20px;
@@ -85,7 +91,7 @@
     img {
         display: block;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 38px;
         height: 53px;
         margin-right: 15px;
@@ -113,7 +119,7 @@
         font-size: 16px;
         line-height: 24px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         b {
             font-size: 14px;
             line-height: 18px;
@@ -138,7 +144,7 @@
         text-transform: uppercase;
         color: $sub-color;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         p {
             font-size: 18px;
             &:last-child {
@@ -163,12 +169,12 @@
         margin: 0 auto;
         top: -5px;
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         &::before {
             height: 880px;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         &::before {
             display: none;
         }
@@ -192,7 +198,7 @@
             display: none;
         } 
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 5px;
@@ -235,7 +241,7 @@
         line-height: 24px;
         color: #1B1B1B;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: calc(100% - 55px);
         padding: 15px 18px;
         p {
@@ -263,7 +269,7 @@
         box-shadow: 0px 15px 25px rgba(179, 179, 179, 0.25);
         font-size: 16px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 5px;
         margin-right: 20px;
         margin-left: auto;

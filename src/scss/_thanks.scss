@@ -4,7 +4,7 @@
     position: relative;
     background: url('../images/bg/thanks-bg.jpg') left top no-repeat;
     background-size: cover;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin: 40px 0;
         padding: 40px 0;
         background: url('../images/bg/thanks-mob-bg.jpg') left top no-repeat;
@@ -21,7 +21,7 @@
         line-height: 30px;
         font-family: $title;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         p {
             font-size: 18px;
             line-height: 24px;
@@ -45,7 +45,7 @@
         margin: 25px auto 0; 
         
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 20px;
         max-width: 300px;
         p {
@@ -56,7 +56,7 @@
     
 }
 .thanks-circle {
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         display: block;
         top: -20px;
         img {
@@ -65,7 +65,7 @@
             }
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         top: -7px;
         right: 5px;
         img {

@@ -5,22 +5,22 @@
 }
 .footer-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    @include media('max', 'xl') {
-       flex-wrap: wrap;
-       max-width: 450px;
-    }
+    // @include mudak('max', 'xl') {
+    //    flex-wrap: wrap;
+    //    max-width: 450px;
+    // }
     
 }
 .footer-info {
-    @include media('max', 'xl') {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin-bottom: 10px;
-    }
+    // @include mudak('max', 'xl') {
+    //     width: 100%;
+    //     display: flex;
+    //     align-items: flex-start;
+    //     justify-content: space-between;
+    //     margin-bottom: 10px;
+    // }
     
 }
 .footer-logo {
@@ -30,18 +30,21 @@
         width: 82px;
         display: block;
     }
-    @include media('max', 'xl') {
-        margin-bottom: 0;
-    }
+    // @include mudak('max', 'xl') {
+    //     margin-bottom: 0;
+    // }
     
 }
 .footer-social {
-    width: 110px;
-    @include grid(3, 10px, 10px, 0, 0, 3);
+    display: flex;
+    gap: 20px;
+    // width: 110px;
+    // @include grid(3, 10px, 10px, 0, 0, 3);
     a {
         width: 30px;
         height: 30px;
         display: flex;
+        gap: 20px;
         align-items: center;
         justify-content: center;
         color: #fff;
@@ -67,16 +70,16 @@
     a {
         @include line($main-color);
     }
-    @include media('max', 'xl') {
-        width: 33%;
-    }
-    @include media('max', 'sm') {
-        width: fit-content;
-        margin-right: 40px;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
+    // @include mudak('max', 'xl') {
+    //     width: 33%;
+    // }
+    // @include mudak('max', 'sm') {
+    //     width: fit-content;
+    //     margin-right: 40px;
+    //     &:last-child {
+    //         margin-right: 0;
+    //     }
+    // }
     
 }
 
@@ -85,24 +88,29 @@
 
 .footer-frame {
     width: 160px;
-    @include media('max', 'xl') {
-        width: 330px;
-        display: flex;
-        align-items: flex-start;
-        flex-direction: row-reverse;
-        margin-top: 10px;
-    }
+    // @include mudak('max', 'xl') {
+    //     width: 330px;
+    //     display: flex;
+    //     align-items: flex-start;
+    //     flex-direction: row-reverse;
+    //     margin-top: 10px;
+    // }
     
 }
 .footer-map {
     width: 100%;
     height: 100px;
     border-radius: 5px;
-    margin-bottom: 10px;
-    @include media('max', 'xl') {
-        width: 150px;
-        margin-bottom: 0;
-        margin-left: 20px;
+    // margin-bottom: 10px;
+    // @include mudak('max', 'xl') {
+    //     width: 150px;
+    //     margin-bottom: 0;
+    //     margin-left: 20px;
+    // }
+
+    @include mobile {
+        width: 100px;
+
     }
     
 }
@@ -115,20 +123,33 @@
         object-fit: cover;
         border-radius: 5px;
     }
-    @include media('max', 'xl') {
-        width: 150px;
-    }
+    // @include mudak('max', 'xl') {
+    //     width: 150px;
+    // }
 }
 .footer-description {
-    @include media('max', 'xl') {
-        width: 100%;
-        margin-top: 25px;
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        gap: 10px;}
+    @include tablet {
+        flex-direction: column;
+        gap: 10px;
     }
+    @include desktop {
+        flex-direction: row;
+        gap:  50px;
+    }
+    // @include mudak('max', 'xl') {
+    //     width: 100%;
+    //     margin-top: 25px;
+    // }
 }
 .footer-description__item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -148,25 +169,42 @@
     .fa-time {
         font-size: 10px;
     }
-    p, a {
-        max-width: 210px;
-        display: block;
-        width: fit-content;
-        font-size: 14px;
-        line-height: 22px;
-        margin-top: 2px;
+    @include mobile {
+        p,
+            a {
+                font-size: 10px;
+            }
     }
+
+    @include tablet {
+        p, a {
+            font-size: 10px;
+        }
+    }
+    @include desktop {
+        p, a {
+            font-size: 14px;
+        }
+    }
+    // p, a {
+    //     max-width: 210px;
+    //     display: block;
+    //     width: fit-content;
+    //     font-size: 14px;
+    //     line-height: 22px;
+    //     margin-top: 2px;
+    // }
     a {
         transition: .4s;
         @include line($main-color);
     } 
-    @include media('max', 'xl') {
-        p {
-            max-width: 100%;
-        }
-        br {
-            display: none;
-        }
-    }
+    // @include mudak('max', 'xl') {
+    //     p {
+    //         max-width: 100%;
+    //     }
+    //     br {
+    //         display: none;
+    //     }
+    // }
     
 }

@@ -26,7 +26,7 @@
 		background-color: $sub-color;
 		color: #fff;
 	}
-	@include media('max', 'sm') {
+	@include mudak('max', 'sm') {
 		font-size: 13px;
 	}
 }
@@ -56,7 +56,7 @@
 		box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.25);
 		background: $main-color;
 	}
-	@include media('max', 'sm') {
+	@include mudak('max', 'sm') {
 		font-size: 13px;
 	}
 	
@@ -78,7 +78,7 @@
     grid-gap: $gap-rows $gap-columns;
     box-sizing: border-box;
 
-	@media screen and (max-width: 1250px) {
+	@media screen and (max-width: 1200px) {
 		grid-template-columns: repeat(auto-fill, minmax(calc( (100% / (#{$item} - #{$break})) - #{$gap-columns}), 1fr));
 	}
 
@@ -100,13 +100,31 @@
 
 $sizes: ("xs":360px, "sm":720px, "md":980px, "xl":1250px, "xxl":1450px);
 
-@mixin media($minmax, $media) {
+@mixin mudak($minmax, $media) {
 	@each $size, $resolution in $sizes {
 		@if $media == $size {
 			@media only screen and (#{$minmax}-width: $resolution) {
 				@content;
 			}
 		}
+	}
+}
+
+@mixin mobile {
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: 1200px) {
+		@content;
 	}
 }
 

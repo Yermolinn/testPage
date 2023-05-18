@@ -3,20 +3,20 @@
     background: url('../images/bg/main-bg.jpg') center no-repeat;
     background-size: cover;
     position: relative;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 210px 0 100px;
         background: url('../images/bg/main-mob-bg.jpg') center bottom no-repeat;
         background-size: cover;
     }
     
 }
-.motto-logo {
+.motto-btn {
     width: 212px;
     height: 391px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 35px;
+    padding-top: 45px;
     background: rgba(#FFF, 0.65);
     box-shadow: 0px 15px 25px rgba(190, 190, 190, 0.35);
     border-radius: 0px 0px 500px 500px;
@@ -26,11 +26,12 @@
     right: 0;
     margin: 0 auto;
     top: 0;
+    
     img {
         display: block;
         width: 130px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 155px;
         height: 182px;
         align-items: flex-start;
@@ -42,6 +43,76 @@
     }
     
 }
+
+.hero-btn {
+
+    width: 140px;
+    height: 150px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        box-sizing: border-box;
+        background: #033333;
+        box-shadow: 0px 10px 10px rgba(179, 179, 179, 0.25);
+        border-radius: 150px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        transition: .4s;
+        animation: zoomAnimation 3s infinite;
+    
+        // i {
+        //     width: 38px;
+        //     height: 38px;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     border: 1px solid rgba(255, 255, 255, 0.1);
+        //     flex-shrink: 0;
+        //     margin-left: auto;
+        //     border-radius: 50%;
+        // }
+
+        @media screen and (max-width: 720px) {
+            scale: 0.7;
+        }
+    
+        &:hover {
+            box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.25);
+            background: $main-color;
+            animation-play-state: paused;
+        }
+    
+        &:focus {
+            background: $main-color;
+            box-shadow: 0px 10px 10px rgba(179, 179, 179, 0.25);
+            animation-play-state: paused;
+        }
+    
+        // @include mudak('max', 'xl') {
+        //     margin-left: auto;
+        // }
+}
+
+@keyframes zoomAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
 .motto-title {
     text-align: center;
     font-size: 120px;
@@ -54,7 +125,7 @@
     span {
         color: #023333;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 55px;
         line-height: 65px;
     }
@@ -62,7 +133,7 @@
 }
 .vacancies-block {
     padding: 80px 0 100px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 40px 0;
     }
     
@@ -73,7 +144,7 @@
         line-height: 1.3;
         text-transform: uppercase;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         h2, h1 {
             font-size: 30px;
             line-height: 35px;
@@ -88,7 +159,7 @@
     h2, h1 {
         font-size: 55px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         h2, h1 {
             font-size: 30px;
             line-height: 35px;
@@ -101,7 +172,7 @@
 .vacancies-block__list {
     margin-top: 40px;
     @include grid(3, 20px, 20px, 1);
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 20px;
     }
     
@@ -151,10 +222,10 @@
     &:hover {
         color: $main-color;
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         font-size: 20px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 16px;
     }
 }
@@ -191,7 +262,7 @@
         right: 0;
         box-sizing: border-box;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         height: 267px;
     }
     
@@ -227,7 +298,7 @@
     .vacancies-block__info_price {
         font-size: 18px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 100%;
         span {
             font-size: 13px;
@@ -247,7 +318,7 @@
             margin-bottom: 0;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 30px;
     } 
 }
@@ -261,16 +332,28 @@
     @include button(276px, 46px); 
 }
 .abroad {
-    padding: 85px 0 100px;
-    background: url('../images/bg/abroad-bg.jpg') left center no-repeat;
-    background-size: cover;
-    position: relative;
-    @include media('max', 'sm') {
-        padding: 40px 0;
-        background: url('../images/bg/abroad-mob-bg.jpg') left center no-repeat;
-        background-size: cover;
-    }
     
+   
+        @include mobile {
+            padding: 40px 0;
+                background: url('../images/bg/abroad-mob-bg.jpg') left center no-repeat;
+                background-size: cover;
+        }
+    
+        @include tablet {
+            padding: 40px 0;
+                background: url('../images/bg/abroad-bg.jpg') left center no-repeat;
+                background-size: cover;
+                position: relative;
+        }
+    
+        @include desktop {
+            // padding: 110px 100px;
+            padding: 80px 0;
+                background: url('../images/bg/abroad-bg.jpg') left center no-repeat;
+                background-size: cover;
+                position: relative;
+        }
 }
 .frame-circle {
     position: absolute;
@@ -287,7 +370,7 @@
             height: 92px;
         }
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         display: none;
     }
     
@@ -305,7 +388,7 @@
 .abroad-list {
     @include grid(4, 20px, 20px, 2, 0, 2);
     margin-top: 35px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 20px;
     }
     
@@ -333,7 +416,7 @@
             display: none;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 6px;
         img {
             width: 37px;
@@ -352,40 +435,73 @@
 .about {
     padding: 80px 0 100px;
     background: url('../images/bg/about-block-bg.png') left top 685px no-repeat;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 40px 0;
         background: none;
     }
     
 }
-.about-content {
-    @include grid(2, 20px, 20px, 1);
-    margin-top: 20px;
+
+// 
+
+
+
+.about {
+    margin: 0 auto;
 }
-.about-content__info {
-    p {
-        font-size: 16px;
-        line-height: 30px;
-        margin-bottom: 25px;
-        &:last-child {
-            margin: 0;
-        }
-    }
-    @include media('max', 'sm') {
-        p {
-            font-size: 13px;
-            line-height: 18px;
-            margin-bottom: 15px;
-        }
+
+.about-content {
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+    justify-content: space-between;
+
+    @include mobile {
+        flex-direction: column;
     }
     
+    @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    @include desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
 }
+
+
+
+.about-content__info {
+justify-content: space-between;
+gap: 20px;
+@include mobile {
+    // width: 320px;
+}
+
+    @include tablet {}
+
+    @include desktop {
+
+    }
+
+    p {
+        text-align: justify;
+        font-size: 16px;
+        line-height: 30px;
+        // margin-bottom: 25px;
+
+        }
+    
+}
+
 .about-content__benefits {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 15px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 30px;
         display: block;
     }
@@ -400,7 +516,7 @@
     border: 1px solid rgba(218, 218, 218, 0.5);
     box-sizing: border-box;
     border-radius: 150px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 100%;
         padding: 7px 12px;
         height: auto;
@@ -442,7 +558,7 @@
         line-height: 16px;
         color: #939393;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 10px 12px;
         flex-direction: row;
         width: 100%;
@@ -487,7 +603,7 @@
         left: 0;
         top: 0;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         height: 205px;
     }
     
@@ -515,7 +631,7 @@
         position: absolute;
         border-radius: inherit;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 44px;
         height: 44px;
         font-size: 8px;
@@ -531,7 +647,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 80px;
     background: $sub-color;
     border-radius: 15px;
     color: #fff;
@@ -547,7 +663,7 @@
             color: $main-color;
         }
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         display: block;
         h3 {
             max-width: 100%;
@@ -555,7 +671,7 @@
             margin-bottom: 15px;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 40px;
         padding: 25px 15px 35px;
         h3 {
@@ -567,7 +683,7 @@
 .about-benefits__list {
     width: 100%;
     @include grid(3, 25px, 25px);
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         grid-gap: 12px;
     }
     
@@ -589,7 +705,7 @@
         border-radius: 50%;
         flex-shrink: 0;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: flex;
         align-items: flex-start;
         font-size: 12px;
@@ -609,11 +725,11 @@
     .slider-dots {
         margin-top: 10px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 40px 0;
         background: #F7F7F7;
     }   
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         .slider-dots {
             margin-top: 20px;
         }
@@ -630,7 +746,7 @@
 .reviews-slider {
     width: calc(100% + 40px);
     margin-left: -20px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         .slick-current {
             opacity: 1;
         }
@@ -650,7 +766,7 @@
     .slick-list {
         padding-bottom: 20px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 15px;
         min-height: 340px;
         transition: .3s;
@@ -662,7 +778,7 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: block;
         margin-bottom: 10px;
     }
@@ -719,7 +835,7 @@
             background-color: #3B5999;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 56px;
         height: 56px;
         a {
@@ -744,7 +860,7 @@
         font-size: 12px;
         line-height: 22px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         p {
             font-size: 15px;
         }
@@ -768,7 +884,7 @@
         color: $main-color;
         @include line($main-color);
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 13px;
         line-height: 20px;
     }
@@ -793,7 +909,7 @@
         background-color: $sub-color;
         color: #fff;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 45px;
         height: 45px;
         font-size: 11px;
@@ -805,19 +921,19 @@
 }
 .center-arrow_prev {
     left: -100px;
-    @include media('max', 'xxl') {
+    @include mudak('max', 'xxl') {
         left: 10px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         left: 0px;
     }
 }
 .center-arrow_next {
     right: -100px;
-    @include media('max', 'xxl') {
+    @include mudak('max', 'xxl') {
         right: 10px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         right: 0px;
     }
 }
@@ -864,7 +980,7 @@
             transform: scale(1);
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 20px;
     }
 }
@@ -901,7 +1017,7 @@
 }
 .gallery {
     padding: 90px 0 100px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 40px 0;
     }
     
@@ -910,7 +1026,7 @@
     margin-top: 30px;
     position: relative;
     .section-frame {
-        width: 1200px;
+        width: 1280px;
         position: absolute;
         z-index: 2;
         top: calc(50% - 30px);
@@ -921,7 +1037,7 @@
             top: 0;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         .slick-current {
             opacity: 1;
         }
@@ -937,7 +1053,7 @@
         display: block;
         border-radius: 5px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin: 0 10px;
         opacity: 0.5;
         transition: .3s;
@@ -948,12 +1064,12 @@
     
 }
 .gallery-prev {
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         left: 20px;
     }
 }
 .gallery-next {
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         right: 20px;
     }
 }

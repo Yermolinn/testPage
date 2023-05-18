@@ -23,10 +23,10 @@ $frame: 1200px;
 
 %page-frame {
 	padding: 100px 0;
-	@include media("max", "md") {
+	@include mudak("max", "md") {
 		padding: 70px 0;
 	}
-	@include media("max", "sm") {
+	@include mudak("max", "sm") {
 		padding: 50px 0;
 	}
 }
@@ -46,8 +46,8 @@ body {
 	font: normal 18px/1.5 $main-font;
 }
 main {
-	padding-top: 140px;
-	@include media('max', 'xl') {
+	padding-top: 189px;
+	@include mudak('max', 'xl') {
 		padding-top: 80px;
 	}
 	
@@ -104,34 +104,55 @@ img {
     	background: transparent; /* Цвет фона */
 	}
 }
+
+
 label {
 	cursor: pointer;
 	margin-bottom: 0;
 }
 .section-frame { 
-	max-width: $frame;
+
 	width: 100%; 
+	padding: 0 15px;
 	margin: 0 auto;
 	box-sizing: border-box;
-	@include media("max", "xl") {
-		max-width: 700px;
-	}
-	@include media("max", "sm") {
-		max-width: 375px;
-		padding: 0 20px;
-	}
+
+	@include mobile {
+
+			width: 448px;
+		}
+	@include tablet {
+			width: 768px;
+		}
+	@include desktop {
+			width: 1280px;
+		}
+	
+
+
+
+	// @include mudak("max", "xl") {
+	// 	max-width: 700px;
+	// }
+	// @include mudak("max", "sm") {
+	// 	max-width: 375px;
+	// 	padding: 0 20px;
+	// }
 } 
 
-.load * {  
-  transition: none !important;
-}
+// .load * {  
+//   transition: none !important;
+// }
 .open-frame	{
 	overflow: hidden;
 } 
 
+
+
  @import 'header';
  @import 'footer';
  @import 'main-page';
+ @import 'benefits';
  @import 'politics';
  @import 'popup';
  @import 'vacancies';

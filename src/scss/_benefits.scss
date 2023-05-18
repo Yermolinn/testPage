@@ -1,0 +1,190 @@
+.benefits {
+    padding: 80px 0;
+    @include mudak('max', 'sm') {
+        padding: 0 0 40px;
+        .section-frame {
+            max-width: 100%;
+            // padding: 0;
+        }
+    }
+        @include mobile {
+            padding: 40px 0;
+        }
+    
+        // @include tablet {}
+    
+        // @include desktop {
+        //     padding: 110px 100px;
+        // }
+
+}
+
+
+.benefits-list {
+    @include grid(4, 40px, 40px, 1);
+    margin-bottom: 70px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+// 
+
+@media screen and (max-width: 320px) {
+    @include grid(4, 20px, 2px, 1);
+}
+
+@media screen and (max-width: 990px) {
+    @include grid(4, 20px, 20px, 1);
+}
+
+    // @include mudak('max', 'sm') {
+    //     max-width: 375px;
+    //     grid-gap: 0;
+    //     margin-bottom: 0;
+    //     padding: 50px 0;
+    //     background: url('../images/bg/benefits-bg.jpg') center no-repeat;
+    //     background-size: cover;
+    // }
+}
+
+
+
+.benefits-item__single {
+    width: 100%;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F9F9F9;
+    border-radius: 150px;
+
+    img {
+        width: 143px;
+    }
+
+    @include mudak('max', 'xl') {
+        display: none;
+    }
+
+
+}
+
+
+
+.benefits-item {
+    width: 100%;
+    height: 340px;
+    padding: 70px 20px 20px;
+    margin-top: 15px;
+    background: #FFFFFF;
+    // box-shadow: 0px 15px 25px rgba(179, 179, 179, 0.25);
+    border-radius: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 290px;
+        height: 370px;
+        box-sizing: border-box;
+        position: absolute;
+        border: 2px solid rgba(218, 218, 218, 0.5);
+        border-radius: 150px;
+        left: -10px;
+        top: -15px;
+        pointer-events: none;
+    }
+
+    &::before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: $main-color;
+        border-radius: 50%;
+        flex-shrink: 0;
+        margin: 0 auto 30px;
+        flex-shrink: 0;
+    }
+
+    span {
+        font-size: 70px;
+        line-height: 85px;
+        color: $main-color;
+        display: block;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 26px;
+        color: #939393;
+        margin-top: 5px;
+    }
+
+    // @include mudak('max', 'xl') {
+    //     &::after {
+    //         width: 225px;
+    //     }
+
+    //     p {
+    //         font-size: 16px;
+    //     }
+    // }
+
+    @media screen and (max-width: 1280px) {
+        &::after {
+                width: 225px;
+            }
+        
+            p {
+                font-size: 16px;
+            }
+    }
+
+
+    @media screen and (max-width: 720px) {
+        width: calc(100% - 40px);
+            padding: 12px 10px;
+            margin: 0 20px;
+            display: flex;
+            align-items: center;
+            height: auto;
+            flex-direction: row;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        
+            &:last-child {
+                margin-bottom: 0;
+            }
+        
+            &::before {
+                width: 6px;
+                height: 6px;
+                margin: 0;
+                margin-right: 10px;
+            }
+        
+            span {
+                font-size: 25px;
+                line-height: 25px;
+            }
+        
+            p {
+                font-size: 13px;
+                line-height: 15px;
+                margin-top: 0;
+                margin-left: 10px;
+            }
+        
+            &::after {
+                width: calc(100% + 24px);
+                height: calc(100% + 24px);
+                left: -12px;
+                top: -12px;
+            }
+    }
+
+    // @include mudak('max', 'sm') {
+        
+    // }
+}

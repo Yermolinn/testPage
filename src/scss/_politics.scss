@@ -13,7 +13,7 @@
         color: $main-color;
 		margin: 0 auto;
 	}
-	@include media("max", "sm") {
+	@include mudak("max", "sm") {
 		font-size: 28px;
 	}
 }

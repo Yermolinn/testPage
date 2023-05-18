@@ -23,7 +23,7 @@
 	box-shadow: 0 0 20px 0 rgba(#000, 0.3);
 	position: relative;
 	margin: auto;
-	@include media('max', 'sm') {
+	@include mudak('max', 'sm') {
 		padding: 50px 20px;
 	}
 	
@@ -46,7 +46,7 @@
 		margin: 15px auto 0;
 		color: #999;
 	}
-	@include media('max', 'sm') {
+	@include mudak('max', 'sm') {
 		h3 {
 			font-size: 24px;
 		}
@@ -88,7 +88,7 @@
 .popup-default-sub {
 	@include button(100%, 60px);
 	margin-top: 40px;
-	@include media('max', 'sm') {
+	@include mudak('max', 'sm') {
 		margin-top: 20px;
 	}
 }

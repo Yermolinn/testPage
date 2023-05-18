@@ -1,10 +1,17 @@
+#formA,
+#formB,
+#formC {
+    display: none;
+}
+
+
 .questionnaire {
     padding: 60px 0 100px;
     background: url('../images/bg/questionnaire-top.png') top right no-repeat, url('../images/bg/questionnaire-bottom.png') bottom left no-repeat;
-    @include media('max', 'md') {
+    @include mudak('max', 'md') {
         background: none;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         background: none;
         padding: 40px 0;
     }
@@ -14,7 +21,7 @@
     &:last-child {
         margin-bottom: 0;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-bottom: 40px;
     }
     
@@ -41,7 +48,7 @@
     span {
         color: $main-color;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         display: block;
         h1 {
             font-size: 30px;
@@ -61,7 +68,7 @@
     border: 1px solid rgba(218, 218, 218, 0.5);
     border-radius: 150px;
     margin-bottom: 40px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 25px;
         border-radius: 20px;
         padding: 10px;
@@ -84,7 +91,7 @@
         font-size: 20px;
         line-height: 26px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 5px;
         padding-right: 20px;
         border-radius: 20px;
@@ -106,7 +113,7 @@
     border-radius: 150px;
     flex-shrink: 0;
     margin-right: 15px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 40px;
         height: 40px;
         font-size: 16px;
@@ -131,7 +138,7 @@
     font-family: $title;
     color: #1B1B1B;
     margin-bottom: 25px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         font-size: 25px;
         margin-bottom: 20px;
     }
@@ -142,7 +149,7 @@
     background: #F6F6F6;
     border-radius: 10px;
     box-sizing: border-box;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding: 20px 10px;
     }
     
@@ -150,7 +157,7 @@
 .questionnaire-item_flex {
     display: flex;
     align-items: flex-start;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         display: block;
     }
     
@@ -159,10 +166,10 @@
     width: 370px;
     flex-shrink: 0;
     margin-right: 28px;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         margin: 0 auto 27px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 100%;
     }
     
@@ -182,7 +189,7 @@
         display: block;
         object-fit: cover;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         height: 157px;
     }
     
@@ -201,7 +208,7 @@
     &:last-child {
         margin-bottom: 0;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-bottom: 14px;
     }
     
@@ -282,7 +289,7 @@
             opacity: 1;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         p {
             font-size: 12px;
             line-height: 16px;
@@ -292,20 +299,20 @@
 }
 .questionnaire-input__descriptor_325 {
     width: 325px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 280px;
     }
     
 }
 .questionnaire-input__descriptor_485 {
     width: 485px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 280px;
     }
 }
 .questionnaire-input__descriptor_440 {
     width: 440px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 280px;
     }
 }
@@ -507,7 +514,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         margin-top: 30px;
     }
     
@@ -516,7 +523,7 @@
     @include button(276px, 46px);
     display: none;
     background: transparent;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: calc(50% - 10px);
         margin-right: auto;
     }
@@ -524,7 +531,7 @@
 .questionnaire-btn__next, .questionnaire-sub {
     @include fill-button(276px, 46px);
     margin-left: auto;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: calc(50% - 10px);
         margin: 0 auto;
     }   
@@ -558,7 +565,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         display: block;
     }
     
@@ -566,7 +573,7 @@
 .questionnaire-line__item_right {
     width: 340px;
     flex-shrink: 0;
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         width: 100%;
         margin-top: 27px;
     }
@@ -582,14 +589,14 @@
             margin-right: 0;
         }
     }
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         flex-wrap: wrap;   
         .questionnaire-check, .questionnaire-checkbox {
             width: fit-content;
             margin-top: 10px;
         }
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         @include grid(2, 20px, 14px, 0, 0, 2);
         .questionnaire-check, .questionnaire-checkbox {
             width: 100%;
@@ -602,7 +609,7 @@
     width: 580px;
     @include grid(3, 27px, 23px);
     grid-gap: 14px;
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         width: 100%;
     }
     
@@ -618,7 +625,7 @@
         font-size: 14px;
         line-height: 20px;
     }
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         p {
             font-size: 12px;
             line-height: 18px;
@@ -627,7 +634,7 @@
     
 }
 .questionnaire-line_duble_mob {
-    @include media('max', 'xl') {
+    @include mudak('max', 'xl') {
         width: 100%;
         @include grid(2, 20px, 14px, 0, 0, 2);
     }
@@ -640,7 +647,7 @@
     display: none;
 }
 .questionnaire_border {
-    @include media('max', 'sm') {
+    @include mudak('max', 'sm') {
         padding-bottom: 15px;
         border-bottom: 1px solid #E6E6E6;
     } 
