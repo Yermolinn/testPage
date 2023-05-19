@@ -28,22 +28,22 @@
 
 // 
 
-@media screen and (max-width: 320px) {
-    @include grid(4, 20px, 2px, 1);
-}
+// @media screen and (min-width: 768px) and (max-width: 1280px) {
+//     @include grid(4, 40px, 2px, 1);
+// }
 
-@media screen and (max-width: 990px) {
-    @include grid(4, 20px, 20px, 1);
-}
+// @media screen and (max-width: 990px) {
+//     @include grid(4, 20px, 20px, 1);
+// }
 
-    // @include mudak('max', 'sm') {
-    //     max-width: 375px;
-    //     grid-gap: 0;
-    //     margin-bottom: 0;
-    //     padding: 50px 0;
-    //     background: url('../images/bg/benefits-bg.jpg') center no-repeat;
-    //     background-size: cover;
-    // }
+    @include mudak('max', 'sm') {
+        max-width: 375px;
+        grid-gap: 0;
+        margin-bottom: 0;
+        padding: 50px 0;
+        background: url('../images/bg/benefits-bg.jpg') center no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -121,15 +121,7 @@
         margin-top: 5px;
     }
 
-    // @include mudak('max', 'xl') {
-    //     &::after {
-    //         width: 225px;
-    //     }
 
-    //     p {
-    //         font-size: 16px;
-    //     }
-    // }
 
     @media screen and (max-width: 1280px) {
         &::after {
@@ -184,7 +176,55 @@
             }
     }
 
-    // @include mudak('max', 'sm') {
-        
-    // }
+        // @include mudak('max', 'xl') {
+        //     &::after {
+        //         width: 225px;
+        //     }
+    
+        //     p {
+        //         font-size: 16px;
+        //     }
+        // }
+    
+        // @include mudak('max', 'sm') {
+        //     width: calc(100% - 40px);
+        //     padding: 12px 10px;
+        //     margin: 0 20px;
+        //     display: flex;
+        //     align-items: center;
+        //     height: auto;
+        //     flex-direction: row;
+        //     box-sizing: border-box;
+        //     margin-bottom: 40px;
+    
+        //     &:last-child {
+        //         margin-bottom: 0;
+        //     }
+    
+        //     &::before {
+        //         width: 6px;
+        //         height: 6px;
+        //         margin: 0;
+        //         margin-right: 10px;
+        //     }
+    
+        //     span {
+        //         font-size: 25px;
+        //         line-height: 25px;
+        //     }
+    
+        //     p {
+        //         font-size: 13px;
+        //         line-height: 15px;
+        //         margin-top: 0;
+        //         margin-left: 10px;
+        //     }
+    
+        //     &::after {
+        //         width: calc(100% + 24px);
+        //         height: calc(100% + 24px);
+        //         left: -12px;
+        //         top: -12px;
+        //     }
+        // }
 }

@@ -98,7 +98,7 @@
 
 // @mixin media
 
-$sizes: ("xs":360px, "sm":720px, "md":980px, "xl":1250px, "xxl":1450px);
+$sizes: ("xs":320px, "sm":768px, "md":980px, "xl":1280px, "xxl":1440px);
 
 @mixin mudak($minmax, $media) {
 	@each $size, $resolution in $sizes {
