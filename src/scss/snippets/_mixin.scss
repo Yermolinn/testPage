@@ -95,6 +95,41 @@
 	}
 }
 
+// @mixin grid($item: 3, $gap-columns: 20px, $gap-rows: 20px, $break: 0, $tabletBreak: 0, $mobBreak: 1) {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	box-sizing: border-box;
+
+// 	>* {
+// 		flex: 0 0 calc((100% / #{$item}) - #{$gap-columns});
+// 		margin-bottom: $gap-rows;
+// 		margin-right: $gap-columns;
+// 	}
+
+// 	@media screen and (max-width: 1200px) {
+// 		>* {
+// 			flex-basis: calc((100% / (#{$item} - #{$break})) - #{$gap-columns});
+// 		}
+// 	}
+
+// 	@media screen and (max-width: 980px) {
+// 		>* {
+// 			flex-basis: calc(100% / #{$tabletBreak} - #{$gap-columns});
+// 		}
+// 	}
+
+// 	@media screen and (max-width: 700px) {
+// 		>* {
+// 			flex-basis: calc(100% / #{$mobBreak} - #{$gap-columns});
+// 		}
+// 	}
+
+// 	img {
+// 		max-width: 100%;
+// 		display: block;
+// 	}
+// }
+
 
 // @mixin media
 

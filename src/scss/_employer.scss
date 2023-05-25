@@ -17,11 +17,7 @@
     background-size: cover;
 }
 .hire {
-    padding: 177px 0 100px;
-    @include mudak('max', 'sm') {
-        padding: 100px 0 40px;
-    }
-    
+    padding: 40px 0;    
 }
 .beautiful-frame {
     transform: translateY(90px);

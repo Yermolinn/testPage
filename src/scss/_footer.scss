@@ -18,25 +18,35 @@
     
 }
 .footer-info {
-    // @include mudak('max', 'xl') {
-    //     width: 100%;
-    //     display: flex;
-    //     align-items: flex-start;
-    //     justify-content: space-between;
-    //     margin-bottom: 10px;
-    // }
-    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    @media screen and (min-width: 480px) and (max-width: 1280px) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
 }
+
+
 .footer-logo {
     display: block;
     margin-bottom: 25px;
     img {
-        width: 82px;
+        width: 120px;
         display: block;
     }
-    // @include mudak('max', 'xl') {
-    //     margin-bottom: 0;
-    // }
+    
+        @media screen and (max-width: 768px) {
+            margin: 0;
+            img {
+                width: 82px;
+            }
+        }
     
 }
 .footer-social {
@@ -44,6 +54,15 @@
     gap: 20px;
     // width: 110px;
     // @include grid(3, 10px, 10px, 0, 0, 3);
+justify-content: center;
+
+// @media screen and (min-width:320px) and (max-width:480px) {
+//     display: flex;
+// }
+
+    @media screen and (min-width: 480px) and (max-width: 1280px) {
+            flex-direction: column;
+        }
     a {
         width: 30px;
         height: 30px;
@@ -99,6 +118,11 @@
     //     flex-direction: row-reverse;
     //     margin-top: 10px;
     // }
+
+        @media screen and (max-width: 768px) {
+    
+            display: none;
+        }
     
 }
 .footer-map {
@@ -112,10 +136,7 @@
     //     margin-left: 20px;
     // }
 
-    @include mobile {
-        width: 100px;
-
-    }
+         
     
 }
 .footer-frame__video {
@@ -154,7 +175,7 @@
 }
 .footer-description__item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     // margin-bottom: 10px;
     &:last-child {
         margin-bottom: 0;
@@ -190,6 +211,7 @@
         }
     }
     @include desktop {
+        
         p, a {
             font-size: 14px;
         }

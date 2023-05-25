@@ -264,12 +264,11 @@
 }
 .abroad {
     
-   
-        @include mobile {
-            padding: 40px 0;
-                background: url('../images/bg/abroad-mob-bg.jpg') left center no-repeat;
-                background-size: cover;
-        }
+    @media screen and (max-width:767px) {
+        padding: 40px 0;
+        background: url('../images/bg/abroad-mob-bg.jpg') left center no-repeat;
+        background-size: cover;
+    }
     
         @include tablet {
             padding: 40px 0;
@@ -325,17 +324,18 @@
         display: flex;
             flex-direction: column;
             gap: 20px;
-            grid-template-columns: repeat(auto-fill, minmax(calc(50% - 20px), 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(calc(50%), 1fr));
     }
 
-    //     @media screen and (min-width: 768px) and (max-width: 1280px) {
-    // @include grid(4, 20px, 20px, 2, 0, 2);
-
-    //     }
+        @media screen and (min-width: 768px) and (max-width: 1280px) {
+    @include grid(4, 20px, 20px, 2, 0, 2);
+            grid-template-columns: repeat(auto-fill, minmax(calc(50%), 1fr));
+        }
     
     
 }
 .abroad-item {
+    scale: 1;
     padding: 9px 20px 9px 7px;
     display: flex;
     align-items: center;
@@ -358,22 +358,46 @@
             display: none;
         }
     }
-    @include mudak('max', 'sm') {
-        padding: 6px;
+
+@media screen and (max-width:767px){
+    padding: 10px;
+    
         img {
             width: 37px;
             margin-right: 5px;
         }
+    
         p {
             font-size: 12px;
             line-height: 16px;
         }
+    
         i {
             font-size: 10px;
+            margin-left: auto;
         }
     }
+
+    @include tablet {
+        i {
+                font-size: 14px;
+                margin-left: auto;
+            }
+        }
     
+
+    @include desktop {
+        i {
+                font-size: 14px;
+                margin-left: 30px;
+            }
+    }
 }
+
+//     @include mudak('max', 'sm') {
+        
+    
+// }
 .about {
     padding: 80px 0 100px;
     background: url('../images/bg/about-block-bg.png') left top 685px no-repeat;
