@@ -98,26 +98,26 @@
 //     checkBoxes.prop("checked", !checkBoxes.prop("checked"));
 // });
 
-const jsCheckbox = document.querySelector('.js-checkbox');
-jsCheckbox.addEventListener('click', function() {
-  const checkBoxes = this.querySelectorAll('input');
-  checkBoxes.forEach(function(checkbox) {
-    checkbox.checked = !checkbox.checked;
-  });
-});
+// const jsCheckbox = document.querySelector('.js-checkbox');
+// jsCheckbox.addEventListener('click', function() {
+//   const checkBoxes = this.querySelectorAll('input');
+//   checkBoxes.forEach(function(checkbox) {
+//     checkbox.checked = !checkbox.checked;
+//   });
+// });
 
 
-const checkboxElems = document.querySelectorAll('.js-checkbox');
-checkboxElems.forEach(elem => {
-  elem.addEventListener('click', () => {
-    const checkBoxes = elem.querySelectorAll('input');
-    checkBoxes.forEach(checkBox => {
-      checkBox.checked = !checkBox.checked;
-    });
-  });
-});
+// const checkboxElems = document.querySelectorAll('.js-checkbox');
+// checkboxElems.forEach(elem => {
+//   elem.addEventListener('click', () => {
+//     const checkBoxes = elem.querySelectorAll('input');
+//     checkBoxes.forEach(checkBox => {
+//       checkBox.checked = !checkBox.checked;
+//     });
+//   });
+// });
 
-console.log(checkboxElems)
+// console.log(checkboxElems)
 
 
 // Код для плавного перехода по якорным ссылкам
@@ -157,14 +157,14 @@ anchorElems.forEach(anchor => {
 // 	}
 // });
 
-document.addEventListener('click', function (event) {
-  const popup = document.querySelector('.target-box');
-  const targetFrame = document.querySelector('.target-frame');
+// document.addEventListener('click', function (event) {
+//   const popup = document.querySelector('.target-box');
+//   const targetFrame = document.querySelector('.target-frame');
 
-  if (!popup.contains(event.target) && targetFrame !== event.target) {
-    frameClose();
-  }
-});
+//   if (!popup.contains(event.target) && targetFrame !== event.target) {
+//     frameClose();
+//   }
+// });
 
 
 

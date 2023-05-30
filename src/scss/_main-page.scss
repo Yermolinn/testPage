@@ -8,6 +8,11 @@
         background: url('../images/bg/main-mob-bg.jpg') center bottom no-repeat;
         background-size: cover;
     }
+
+
+    @include tablet {
+            padding: 280px 0;
+    }
     
 }
 .motto-btn {

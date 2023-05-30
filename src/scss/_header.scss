@@ -212,7 +212,7 @@
         scale: 1;
     }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 76px) {
         scale: 0.7;
 
     }
@@ -282,11 +282,11 @@
     //     border-radius: 50%;
     // }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 767px) {
         scale: 0.7;
     }
 
-    @media screen and (min-width: 721px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 
@@ -647,7 +647,7 @@ fill: rgb(60, 183, 255);
         display: none;
     }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
     display: flex;
 }
 

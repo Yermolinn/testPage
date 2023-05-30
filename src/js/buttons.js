@@ -47,23 +47,41 @@
             //         }
             //     }
             // });
+           
             
-            
-            let shelter = document.querySelector('.js-shelter');
-            let countryShelter = document.querySelector('.country-shelter');
-            shelter.addEventListener('click', function (e) {
-                let element = e.target;
-                console.log(element);
+            const shelter = document.querySelector('.js-shelter');
+            const countryShelter = document.querySelector('.country-shelter');
+            const checkBox = document.querySelector('.questionnaire-check.form-check');
 
-                if (element.type === 'radio') {
-                    if (element.id === 'shelter') {
-                        // listStudent.forEach(elem => console.log(elem))
-                        countryShelter.style.display = 'block';
-                    } else {
-                        countryShelter.style.display = 'none';
-                    }
-                }
-            });
+function toggleCountryShelterDisplay() {
+  if (checkBox.classList.contains('questionnaire-check_active')) {
+    countryShelter.style.display = 'block';
+  } else {
+    countryShelter.style.display = 'none';
+  }
+}
+
+shelter.addEventListener('click', toggleCountryShelterDisplay);
+
+
+
+
+
+
+
+
+
+
+
+                // if (element.type === 'radio') {
+                //     if (element.id === 'shelter') {
+                //         // listStudent.forEach(elem => console.log(elem))
+                //         countryShelter.style.display = 'block';
+                //     } else {
+                //         countryShelter.style.display = 'none';
+                //     }
+                // }
+            // });
 
     // let together = document.querySelector('.js-together');
     // let infoTogether = document.querySelector('.info-together');
