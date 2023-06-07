@@ -1,2 +1,0 @@
-var shelter=document.querySelector(".js-shelter"),countryShelter=document.querySelector(".country-shelter"),checkBox=document.querySelector(".questionnaire-check.form-check");function toggleCountryShelterDisplay(){checkBox.classList.contains("questionnaire-check_active")?countryShelter.style.display="block":countryShelter.style.display="none"}shelter.addEventListener("click",toggleCountryShelterDisplay);
-//# sourceMappingURL=questionnaire.e1f2a7de.js.map
