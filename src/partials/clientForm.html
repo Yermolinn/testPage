@@ -153,9 +153,9 @@
                                 </div>
                             </div>
 
-                            <div class="questionnaire-line mb-3 country-shelter" style="display: none;">
+                            <div class="questionnaire-line mb-3 js-country-shelter" style="display: none;">
                                 <div class="questionnaire-line__item">
-                                    <label for="countryShelter" class="form-label questionnaire-label">В якій країні <span
+                                    <label for="countryShelter" class="questionnaire-label">В якій країні <span
                                             class="importent">*</span></label>
                             
                                     <div class="questionnaire-input">
@@ -208,11 +208,11 @@
                                         <input type="radio" id="no-student" name="student" value="Ні">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <label for="student">Ні</label>
+                                    <label for="no-student">Ні</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="questionnaire-line list-student" style="display: none;">
+                        <div class="questionnaire-line js-list-student" style="display: none;">
                             <div class="questionnaire-line">
                                 <div class="questionnaire-line__item">
                                     <label for="university" class="questionnaire-label">Навчальний заклад</label>
@@ -229,7 +229,7 @@
                         
                             <div class="questionnaire-line">
                                 <div class="questionnaire-line__item">
-                                    <label for="faculty" class="form-label">Факультет</label>
+                                    <label for="faculty" class="questionnaire-label">Факультет</label>
                                     <div class="questionnaire-input">
                                         <input type="text" class="form-control" id="faculty" name="contact_cf_7c231d725c0d5cb4b2159cea6266128406139b42">
                                         <div class="invalid-feedback">
@@ -242,7 +242,7 @@
                         
                             <div class="questionnaire-line">
                                 <div class="questionnaire-line__item">
-                                    <label for="formEducation" class="form-label">Форма навчання</label>
+                                    <label for="formEducation" class="questionnaire-label">Форма навчання</label>
                                     <div class="questionnaire-input">
                                         <input type="text" class="form-control" id="formEducation"
                                             name="contact_cf_46b91c78ba6a3f9762f0fe1f2dc74238df90c289">
@@ -255,7 +255,7 @@
                         
                             <div class="questionnaire-line">
                                 <div class="questionnaire-line__item">
-                                    <label for="speciality" class="form-label">Спеціальність</label>
+                                    <label for="speciality" class="questionnaire-label">Спеціальність</label>
                                     <div class="questionnaire-input">
                                         <input type="text" class="form-control" id="speciality"
                                             name="contact_cf_4080db556b5a90be9348711cf7a008001801b1f0">
@@ -269,7 +269,7 @@
                             <div class="questionnaire-line_duble">
                                 <div class="questionnaire-line">
                                     <div class="questionnaire-line__item">
-                                        <label for="entryDate" class="form-label">Дата вступу</label>
+                                        <label for="entryDate" class="questionnaire-label">Дата вступу</label>
                                         <div class="questionnaire-input">
                                             <input type="date" class="form-control" id="entryDate" name="entryDate">
                                             <div class="invalid-feedback">
@@ -281,7 +281,7 @@
     
                                 <div class="questionnaire-line">
                                     <div class="questionnaire-line__item">
-                                        <label for="graduationDate" class="form-label">Дата випуску</label>
+                                        <label for="graduationDate" class="questionnaire-label">Дата випуску</label>
                                         <div class="questionnaire-input">
                                             <input type="date" class="form-control" id="graduationDate" name="graduationDate">
                                             <div class="invalid-feedback">
@@ -294,7 +294,7 @@
                         
                             <div class="questionnaire-line">
                                 <div class="questionnaire-line__item">
-                                    <label for="education" class="form-label">Ступінь освіти</label>
+                                    <label for="education" class="questionnaire-label">Ступінь освіти</label>
                                     <div class="questionnaire-input">
                                         <input type="text" class="form-control" id="education" name="education">
                                     </div>
@@ -338,7 +338,7 @@
                             </div>
                         </div>
                         <div class="questionnaire-line">
-                            <label for="languages" class="form-label questionnaire-label">Додаткова іноземна мова</label>
+                            <label for="languages" class="questionnaire-label">Додаткова іноземна мова</label>
                             <div class="questionnaire-input">
                                 <input type="text" class="form-control" id="languages" name="contact_cf_0947666cbb4f7f4c68b45980111dad17b3f01133">
                             </div>
@@ -601,7 +601,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="questionnaire-line questionnaire-line__copy">
+                        <div class="questionnaire-line">
                             <p class="questionnaire-label">Хронічні захворювання, алергії*</p>
                             <div
                                 class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
@@ -639,50 +639,50 @@
 
 
 
-                        <div class="questionnaire-line questionnaire-line__copy">
-                            <label class="questionnaire-label">Наявність біометричного паспорта*</label>
+                        <div class="questionnaire-line">
+                            <label class="questionnaire-label">Плануєте їхати самостійно</label>
                             <div
                                 class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_true">
+                                <div class="questionnaire-check" id="noTogetherCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Маю">
+                                        <input type="radio" id="no-together" name="no-together" value="Самостійно">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <label>Маю</label>
+                                    <label for="alone">Самостійно</label>
                                 </div>
-                                <div class="questionnaire-check check-child_false">
+                                <div class="questionnaire-check" id="togetherCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Не має">
+                                        <input type="radio" id="together" name="together" value="Разом">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <label>Не має</label>
+                                    <label for="together">Разом</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="questionnaire-line questionnaire-line__copy">
-                            <label class="questionnaire-label">Обмеження на виїзд з України та в’їзд в інші країни
-                            </label>
-                            <div
-                                class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_false ">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Не має">
-                                        <i class="fa-check"></i>
+                        <div class="questionnaire-line js-info-together" style="display: none;">
+                            <div class="questionnaire-line" >
+                                <div class="questionnaire-line__item">
+                                    <label for="secPerson" class="questionnaire-label">Вкажіть ПІБ з ким плануєте їхати</label>
+                                    <div class="questionnaire-input">
+                                        <input class="textarea-control" id="secPerson" rows="3" name="deal_cf_35c2cb99905d80bc2b762c6d1c94af914cab28ce"
+                                            placeholder="Іваненко Іван Іванович, Іваненко Анастасія Михайлівна"></textarea>
                                     </div>
-                                    <label>Не має</label>
                                 </div>
-                                <div class="questionnaire-check check-child_true ">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Є, а саме">
-                                        <i class="fa-check"></i>
+                            </div>
+                            <div class="questionnaire-line">
+                                <div class="questionnaire-line__item">
+                                    <label for="secPersonPhone" class="questionnaire-label">Контактні данні особи, з ким плануєте
+                                        їхати</label>
+                                    <div class="questionnaire-input">
+                                        <input type="text" class="form-control" id="secPersonPhone"
+                                            name="deal_cf_ea976f14a52c0b3887275e31d26f20d43aa60e6a" placeholder="е-mail, номер телефону">
                                     </div>
-                                    <label>Є, а саме</label>
                                 </div>
                             </div>
                         </div>
                         <div class="questionnaire-line">
                             <div class="questionnaire-line__item">
-                                <label class="questionnaire-label">Коментар</label>
+                                <label class="questionnaire-label" for="companyAddress">Коментар</label>
                                 <div class="questionnaire-input">
                                     <input type="text" name="companyAddress">
                                     <div class="questionnaire-input__descriptor">

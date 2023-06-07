@@ -1,64 +1,10 @@
 // Viber check
 const chek = document.querySelector('.questionnaire-messege__check');
 
-// Переключатель языка
-// const questionnaireChecks = document.querySelectorAll('.questionnaire-check');
-// questionnaireChecks.forEach(check => {
-// check.addEventListener('click', () => {
-//     const siblingChecks = Array.from(check.parentNode.children).filter(child => child !== check && child.classList.contains('questionnaire-check'));
-//     siblingChecks.forEach(siblingCheck => siblingCheck.classList.remove('questionnaire-check_active'));
-//     check.classList.add('questionnaire-check_active');
 
-// });
-// });
 
-// Переключатель класса - check_active
-// const questionnaireCheckboxes = document.querySelectorAll('.questionnaire-checkbox');
-// questionnaireCheckboxes.forEach(checkbox => {
-// checkbox.addEventListener('click', () => {
-//     checkbox.classList.toggle('questionnaire-check_active');
-// });
-// });
-
-// const questionnairePolitics = document.querySelectorAll('.questionnaire-politics');
-// questionnairePolitics.forEach(politic => {
-// politic.addEventListener('click', () => {
-//     politic.classList.toggle('questionnaire-check_active');
-// });
-// });
-
-// let driver = document.querySelector('.js-drive-licence');
-// let driveCategory = document.querySelector('.drive-category');
-// driver.addEventListener('click', function (e) {
-//     let element = e.target;
-
-//     if (element.type === 'radio') {
-//         if (element.id === 'drive') {
-//             // listStudent.forEach(elem => console.log(elem))
-//             driveCategory.style.display = 'block';
-//         } else {
-//             driveCategory.style.display = 'none';
-//         }
-//     }
-// });
-
-// let speakEng = document.querySelector('.js-english-language');
-// let engLevel = document.querySelector('.english-level');
-// speakEng.addEventListener('click', function (e) {
-//     let element = e.target;
-
-//     if (element.type === 'radio') {
-//         if (element.id === 'english') {
-//             // listStudent.forEach(elem => console.log(elem))
-//             engLevel.style.display = 'block';
-//         } else {
-//             engLevel.style.display = 'none';
-//         }
-//     }
-// });
-
+// Переключатель галочки
 const checkBoxes = document.querySelectorAll('.questionnaire-check');
-console.log(checkBoxes);
 
 
 checkBoxes.forEach(checkBox => {
@@ -76,15 +22,9 @@ checkBoxes.forEach(checkBox => {
 
 //  Открытие формы - прихисток
 
-
-
-
-
-// #2
 const shelterCheck = document.getElementById('shelterCheck');
 const noShelterCheck = document.getElementById('noShelterCheck');
-const shelter = document.querySelector('.js-shelter');
-const countryShelter = document.querySelector('.country-shelter');
+const countryShelter = document.querySelector('.js-country-shelter');
 
 shelterCheck.addEventListener('click', function() {
   const shelterInput = document.getElementById('shelter');
@@ -115,55 +55,10 @@ noShelterCheck.addEventListener('click', function() {
 
 
 
-
-
-
-// const shelter = document.querySelector('.js-shelter');
-// const countryShelter = document.querySelector('.country-shelter');
-
-// function toggleCountryShelterDisplay(event) {
-//     const element = event.target;
-//     console.log(element)
-
-//     if (element.type === 'radio') {
-//     if (element.id === 'shelter') {
-//         // listStudent.forEach(elem => console.log(elem))
-//         countryShelter.style.display = 'block';
-//     } else {
-//         countryShelter.style.display = 'none';
-//     }
-// };
-// }
-// shelter.addEventListener('click', toggleCountryShelterDisplay);
-
-
-
-
-
-
-
-
-
-
 //  Открытие формы - студент
 const studentCheck = document.getElementById('studentCheck');
 const noStudentCheck = document.getElementById('noStudentCheck');
-const student = document.querySelector('.js-student');
-const listStudent = document.querySelector('.list-student');
-
-// function toggleStudent(e) {
-//   const checkBox = e.target;
-
-//   if (checkBox.classList.toggle('questionnaire-check_active')) {
-//     listStudent.style.display = 'block';
-//   } else {
-//     listStudent.style.display = 'none';
-//   }
-// }
-// student.addEventListener('click', toggleStudent);
-
-
-
+const listStudent = document.querySelector('.js-list-student');
 
 
 studentCheck.addEventListener('click', function() {
@@ -194,43 +89,32 @@ noStudentCheck.addEventListener('click', function() {
 
 
 
+//  Открытие формы - поездка вместе
+const togetherCheck = document.getElementById('togetherCheck');
+const noTogetherCheck = document.getElementById('noTogetherCheck');
+const infoTogether = document.querySelector('.js-info-together');
 
 
+togetherCheck.addEventListener('click', function() {
+  const togetherInput = document.getElementById('together');
+  if (togetherInput && togetherInput.type === 'radio') {
+    togetherInput.checked = true;
+    if (togetherInput.checked) {
+      infoTogether.style.display = 'block';
+    } else {
+      infoTogether.style.display = 'none';
+    }
+  }
+});
 
-
-
-// speakEng.addEventListener('click', function (e) {
-//     let element = e.target;
-
-//     if (element.type === 'radio') {
-//         if (element.id === 'english') {
-//             // listStudent.forEach(elem => console.log(elem))
-//             engLevel.style.display = 'block';
-//         } else {
-//             engLevel.style.display = 'none';
-//         }
-//     }
-// });
-
-// if (element.type === 'radio') {
-//     if (element.id === 'shelter') {
-//         // listStudent.forEach(elem => console.log(elem))
-//         countryShelter.style.display = 'block';
-//     } else {
-//         countryShelter.style.display = 'none';
-//     }
-// }
-// });
-
-// let together = document.querySelector('.js-together');
-// let infoTogether = document.querySelector('.info-together');
-// together.addEventListener('click', function (e) {
-//     let element = e.target;
-//     if (element.type === 'radio') {
-//         if (element.id === 'together') {
-//             infoTogether.style.display = 'block';
-//         } else {
-//             infoTogether.style.display = 'none';
-//         }
-//     }
-// });
+noTogetherCheck.addEventListener('click', function() {
+  const noTogetherInput = document.getElementById('no-together');
+  if (noTogetherInput && noTogetherInput.type === 'radio') {
+    noTogetherInput.checked = true;
+    if (noTogetherInput.checked) {
+      infoTogether.style.display = 'none';
+    } else {
+      infoTogether.style.display = 'block';
+    }
+  }
+});
