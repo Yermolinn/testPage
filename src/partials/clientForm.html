@@ -36,11 +36,11 @@
                     <i class="fa-step-2 questionnaire-steps__icon"></i>
                     <p>Освіта та знання мов</p>
                 </div>
-                <div class="questionnaire-steps__item" data-index="3">
+                <!-- <div class="questionnaire-steps__item" data-index="3">
                     <i class="fa-step-3 questionnaire-steps__icon"></i>
                     <p>Попередні місця</p>
-                </div>
-                <div class="questionnaire-steps__item" data-index="4">
+                </div> -->
+                <div class="questionnaire-steps__item" data-index="3">
                     <i class="fa-step-4 questionnaire-steps__icon"></i>
                     <p>Додаткова інформація</p>
                 </div>
@@ -99,12 +99,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="questionnaire-line">
-                                    <div class="questionnaire-line__item">
-                                        <label for="email" class="questionnaire-label">Електронна адреса</label>
-                                        <div class="questionnaire-input">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Електронна адреса">
-                                        </div>
+
+                                <div class="questionnaire-line__item">
+                                    <label for="email" class="questionnaire-label">Електронна адреса</label>
+                                    <div class="questionnaire-input">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Електронна адреса">
                                     </div>
                                 </div>
                             </div>
@@ -130,33 +129,31 @@
 
 
                             
-                            <div class="questionnaire-line">
-                                <div class="questionnaire-line__item js-shelter">
-                                    <label for="currentCountry" class="questionnaire-label">Наявність прихистку за кордоном*</label>
+                            <div class="questionnaire-line js-shelter">
+                                <div class="questionnaire-line__item">
+                                    <label class="questionnaire-label">Наявність прихистку за кордоном*</label>
                                     <div class="questionnaire-line_duble">
-                                        <div class="questionnaire-check form-check">
+                                        <div class="questionnaire-check" id="shelterCheck">
                                             <div class="questionnaire-check__icon">
-                                                <input type="radio" class="form-check-input" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802"
-                                                    id="no-shelter" value="Ні" >
+                                                <input type="radio" class="form-check-input" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802" id="shelter"
+                                                    value="Так">
                                                 <i class="fa-check"></i>
                                             </div>
-                                            <label class="form-check-label" for="no-shelter">Маю</label>
+                                            <label class="form-check-label" for="shelter">Маю</label>
                                         </div>
-                                        <div class="questionnaire-check form-check">
+                                        <div class="questionnaire-check" id="noShelterCheck">
                                             <div class="questionnaire-check__icon">
-                                                <input type="radio" class="form-check-input" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802"
-                                                    id="shelter" value="Так">
+                                                <input type="radio" class="form-check-input" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802" id="no-shelter"
+                                                    value="Ні" checked="">
                                                 <i class="fa-check"></i>
                                             </div>
-                                            <label class="form-check-label" for="shelter">Не маю</label>
+                                            <label class="form-check-label" for="no-shelter">Не маю</label>
                                         </div>
                                     </div>
-                                    
-                                    
                                 </div>
                             </div>
-                            <div class="questionnaire-line_item mb-3 country-shelter" style="display: none;">
-                            
+
+                            <div class="questionnaire-line mb-3 country-shelter" style="display: none;">
                                 <div class="questionnaire-line__item">
                                     <label for="countryShelter" class="form-label questionnaire-label">В якій країні <span
                                             class="importent">*</span></label>
@@ -195,44 +192,112 @@
                 <div class="questionnaire-item">
                     <p class="questionnaire-item__title">Освіта</p>
                     <div class="questionnaire-item__content">
-                        <div class="questionnaire-line questionnaire-line__copy">
-                            <p class="questionnaire-label">Ви студент?*</p>
+                        <div class="questionnaire-line js-student">
+                            <label class="questionnaire-label">Ви студент?*</label>
                             <div
-                                class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_false js-checkbox">
+                                class="questionnaire-line_duble ">
+                                <div class="questionnaire-check" id="studentCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Ні">
+                                        <input type="radio" id="student" name="student" value="Так">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Ні</p>
+                                    <label for="no-student">Так</label>
                                 </div>
-                                <div class="questionnaire-check check-child_true js-checkbox">
+                                <div class="questionnaire-check" id="noStudentCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Так">
+                                        <input type="radio" id="no-student" name="student" value="Ні">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Так</p>
+                                    <label for="student">Ні</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="questionnaire-line questionnaire-line__copy ">
-                            <p class="questionnaire-label">Чи є у вас попередня освіта у вищому навчальному
-                                закладі?*</p>
-                            <div
-                                class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_false js-checkbox">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="education" value="Ні">
-                                        <i class="fa-check"></i>
+                        <div class="questionnaire-line list-student" style="display: none;">
+                            <div class="questionnaire-line">
+                                <div class="questionnaire-line__item">
+                                    <label for="university" class="questionnaire-label">Навчальний заклад</label>
+                                    <div class="questionnaire-input">
+                                        <input type="text" class="form-control" id="university"
+                                            name="contact_cf_ed56a5bcf85fc1b88d01ebb746d3a1f96640953e">
+                                        <div class="invalid-feedback">
+                                            Поле не може бути пустим
+                                        </div>
                                     </div>
-                                    <p>Ні</p>
                                 </div>
-                                <div class="questionnaire-check check-child_true js-checkbox">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="education" value="Так">
-                                        <i class="fa-check"></i>
+                            </div>
+                        
+                        
+                            <div class="questionnaire-line">
+                                <div class="questionnaire-line__item">
+                                    <label for="faculty" class="form-label">Факультет</label>
+                                    <div class="questionnaire-input">
+                                        <input type="text" class="form-control" id="faculty" name="contact_cf_7c231d725c0d5cb4b2159cea6266128406139b42">
+                                        <div class="invalid-feedback">
+                                            Поле не може бути пустим
+                                        </div>
                                     </div>
-                                    <p>Так</p>
+                                </div>
+                            </div>
+                            
+                        
+                            <div class="questionnaire-line">
+                                <div class="questionnaire-line__item">
+                                    <label for="formEducation" class="form-label">Форма навчання</label>
+                                    <div class="questionnaire-input">
+                                        <input type="text" class="form-control" id="formEducation"
+                                            name="contact_cf_46b91c78ba6a3f9762f0fe1f2dc74238df90c289">
+                                        <div class="invalid-feedback">
+                                            Поле не може бути пустим
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="questionnaire-line">
+                                <div class="questionnaire-line__item">
+                                    <label for="speciality" class="form-label">Спеціальність</label>
+                                    <div class="questionnaire-input">
+                                        <input type="text" class="form-control" id="speciality"
+                                            name="contact_cf_4080db556b5a90be9348711cf7a008001801b1f0">
+                                        <div class="invalid-feedback">
+                                            Поле не може бути пустим
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="questionnaire-line_duble">
+                                <div class="questionnaire-line">
+                                    <div class="questionnaire-line__item">
+                                        <label for="entryDate" class="form-label">Дата вступу</label>
+                                        <div class="questionnaire-input">
+                                            <input type="date" class="form-control" id="entryDate" name="entryDate">
+                                            <div class="invalid-feedback">
+                                                Поле не може бути пустим
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="questionnaire-line">
+                                    <div class="questionnaire-line__item">
+                                        <label for="graduationDate" class="form-label">Дата випуску</label>
+                                        <div class="questionnaire-input">
+                                            <input type="date" class="form-control" id="graduationDate" name="graduationDate">
+                                            <div class="invalid-feedback">
+                                                Поле не може бути пустим
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="questionnaire-line">
+                                <div class="questionnaire-line__item">
+                                    <label for="education" class="form-label">Ступінь освіти</label>
+                                    <div class="questionnaire-input">
+                                        <input type="text" class="form-control" id="education" name="education">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -241,48 +306,54 @@
                 <div class="questionnaire-item">
                     <p class="questionnaire-item__title">Знання іноземних мов</p>
                     <div class="questionnaire-item__content">
-                        <p class="questionnaire-label">Англійська*</p>
-                        <div class="questionnaire-line questionnaire-line_four">
-                            <div class="questionnaire-check js-checkbox">
+                        <label class="questionnaire-label">Англійська*</label>
+                        <div class="questionnaire-line laguages-group-btn">
+                            <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
                                     <input type="radio" name="lang[]" value="Не володію">
                                     <i class="fa-check"></i>
                                 </div>
-                                <p>Не володію</p>
+                                <label>Не володію</label>
                             </div>
-                            <div class="questionnaire-check js-checkbox">
+                            <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
                                     <input type="radio" name="lang[]" value="Базові знання">
                                     <i class="fa-check"></i>
                                 </div>
-                                <p>Базові знання</p>
+                                <label>Базові знання</label>
                             </div>
-                            <div class="questionnaire-check js-checkbox">
+                            <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
                                     <input type="radio" name="lang[]" value="Розмовна">
                                     <i class="fa-check"></i>
                                 </div>
-                                <p>Розмовна</p>
+                                <label>Розмовна</label>
                             </div>
-                            <div class="questionnaire-check js-checkbox">
+                            <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
                                     <input type="radio" name="lang[]" value="Вільне володіння">
                                     <i class="fa-check"></i>
                                 </div>
-                                <p>Вільне володіння</p>
+                                <label>Вільне володіння</label>
                             </div>
                         </div>
-                        <div class="questionnaire-add">
+                        <div class="questionnaire-line">
+                            <label for="languages" class="form-label questionnaire-label">Додаткова іноземна мова</label>
+                            <div class="questionnaire-input">
+                                <input type="text" class="form-control" id="languages" name="contact_cf_0947666cbb4f7f4c68b45980111dad17b3f01133">
+                            </div>
+                        </div>
+                        <!-- <div class="questionnaire-add">
                             <div class="questionnaire-add__icon"></div>
                             <p>Додати іноземну мову</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
 
 
 
-            <div class="questionnaire-list__step" data-step="3">
+            <!-- <div class="questionnaire-list__step" data-step="3">
                 <div class="questionnaire-item">
                     <p class="questionnaire-item__title">Місця роботи</p>
                     <div class="questionnaire-item__content">
@@ -372,64 +443,64 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
-            <div class="questionnaire-list__step" data-step="4">
+            <div class="questionnaire-list__step" data-step="3">
                 <div class="questionnaire-item">
                     <p class="questionnaire-item__title">робота з технікою та інші навички</p>
                     <div class="questionnaire-item__content">
                         <div class="questionnaire-line questionnaire-line_flex">
                             <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Відкриті категорії посвідчення водія </p>
+                                <label class="questionnaire-label">Відкриті категорії посвідчення водія </label>
                                 <div class="questionnaire-group-flex">
-                                    <div class="questionnaire-checkbox js-checkbox">
+                                    <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
                                             <input type="checkbox" name="driver[]" value="A">
                                             <i class="fa-check"></i>
                                         </div>
-                                        <p>A</p>
+                                        <label>A</label>
                                     </div>
-                                    <div class="questionnaire-checkbox js-checkbox">
+                                    <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
                                             <input type="checkbox" name="driver[]" value="B">
                                             <i class="fa-check"></i>
                                         </div>
-                                        <p>B</p>
+                                        <label>B</label>
                                     </div>
-                                    <div class="questionnaire-checkbox js-checkbox">
+                                    <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
                                             <input type="checkbox" name="driver[]" value="C">
                                             <i class="fa-check"></i>
                                         </div>
-                                        <p>C</p>
+                                        <label>C</label>
                                     </div>
-                                    <div class="questionnaire-checkbox js-checkbox">
+                                    <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
                                             <input type="checkbox" name="driver[]" value="D">
                                             <i class="fa-check"></i>
                                         </div>
-                                        <p>D</p>
+                                        <label>D</label>
                                     </div>
-                                    <div class="questionnaire-checkbox js-checkbox">
+                                    <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
                                             <input type="checkbox" name="driver[]" value="E">
                                             <i class="fa-check"></i>
                                         </div>
-                                        <p>E</p>
+                                        <label>E</label>
                                     </div>
-                                    <div class="questionnaire-checkbox js-checkbox">
+                                    <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
                                             <input type="checkbox" name="driver[]" value="Трактор">
                                             <i class="fa-check"></i>
                                         </div>
-                                        <p>Трактор</p>
+                                        <label>Трактор</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="questionnaire-line__item questionnaire-line__item_right">
-                                <p class="questionnaire-label">Досвід керування</p>
+                                <label class="questionnaire-label">Досвід керування</label>
                                 <div class="questionnaire-input">
                                     <input type="text" name="companyAddress">
                                     <div class="questionnaire-input__descriptor">
@@ -443,7 +514,7 @@
                         </div>
                         <div class="questionnaire-line">
                             <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Досвід роботи з спеціалізованою технікою</p>
+                                <label class="questionnaire-label">Досвід роботи з спеціалізованою технікою</label>
                                 <div class="questionnaire-input">
                                     <input type="text" name="companyAddress">
                                     <div class="questionnaire-input__descriptor">
@@ -458,7 +529,7 @@
                         </div>
                         <div class="questionnaire-line">
                             <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Інші навички</p>
+                                <label class="questionnaire-label">Інші навички</label>
                                 <div class="questionnaire-input">
                                     <input type="text" name="companyAddress">
                                     <div class="questionnaire-input__descriptor">
@@ -472,7 +543,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="questionnaire-item">
+
+                <!-- <div class="questionnaire-item">
                     <p class="questionnaire-item__title">Додаткова інформація</p>
                     <div class="questionnaire-item__content">
                         <div class="questionnaire-line questionnaire-line_three">
@@ -506,26 +578,26 @@
                         <div class="questionnaire-line">
                             <p class="questionnaire-label">Паління*</p>
                             <div class="questionnaire-group-three">
-                                <div class="questionnaire-check js-checkbox">
+                                <div class="questionnaire-check">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="driver[]" value="Не палю">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Не палю</p>
+                                    <label>Не палю</label>
                                 </div>
-                                <div class="questionnaire-check js-checkbox">
+                                <div class="questionnaire-check">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="driver[]" value="Іноді">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Іноді</p>
+                                    <label>Іноді</label>
                                 </div>
-                                <div class="questionnaire-check js-checkbox">
+                                <div class="questionnaire-check">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="driver[]" value="Палю">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Палю</p>
+                                    <label>Палю</label>
                                 </div>
                             </div>
                         </div>
@@ -533,71 +605,84 @@
                             <p class="questionnaire-label">Хронічні захворювання, алергії*</p>
                             <div
                                 class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_false js-checkbox">
+                                <div class="questionnaire-check">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="student" value="Не має">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Не має</p>
+                                    <label>Не має</label>
                                 </div>
-                                <div class="questionnaire-check check-child_true js-checkbox">
+                                <div class="questionnaire-check">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="student" value="Маю">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Маю</p>
+                                    <label>Маю</label>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
                 <div class="questionnaire-item questionnaire-item_last">
-                    <p class="questionnaire-item__title">інформація щодо віїзду за кордон</p>
+                    <label class="questionnaire-item__title">Побажання щодо роботи</label>
                     <div class="questionnaire-item__content">
+                        <div class="questionnaire-line">
+                            <div class="questionnaire-line__item">
+                                <label class="questionnaire-label">Бажана дата та термін роботи</label>
+                                <div class="questionnaire-input">
+                                    <input type="text" name="companyAddress">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
                         <div class="questionnaire-line questionnaire-line__copy">
-                            <p class="questionnaire-label">Наявність біометричного паспорта*</p>
+                            <label class="questionnaire-label">Наявність біометричного паспорта*</label>
                             <div
                                 class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_true js-checkbox">
+                                <div class="questionnaire-check check-child_true">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="student" value="Маю">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Маю</p>
+                                    <label>Маю</label>
                                 </div>
-                                <div class="questionnaire-check check-child_false js-checkbox">
+                                <div class="questionnaire-check check-child_false">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="student" value="Не має">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Не має</p>
+                                    <label>Не має</label>
                                 </div>
                             </div>
                         </div>
                         <div class="questionnaire-line questionnaire-line__copy">
-                            <p class="questionnaire-label">Обмеження на виїзд з України та в’їзд в інші країни
-                            </p>
+                            <label class="questionnaire-label">Обмеження на виїзд з України та в’їзд в інші країни
+                            </label>
                             <div
                                 class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
-                                <div class="questionnaire-check check-child_false js-checkbox">
+                                <div class="questionnaire-check check-child_false ">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="student" value="Не має">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Не має</p>
+                                    <label>Не має</label>
                                 </div>
-                                <div class="questionnaire-check check-child_true js-checkbox">
+                                <div class="questionnaire-check check-child_true ">
                                     <div class="questionnaire-check__icon">
                                         <input type="radio" name="student" value="Є, а саме">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <p>Є, а саме</p>
+                                    <label>Є, а саме</label>
                                 </div>
                             </div>
                         </div>
                         <div class="questionnaire-line">
                             <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Коментар</p>
+                                <label class="questionnaire-label">Коментар</label>
                                 <div class="questionnaire-input">
                                     <input type="text" name="companyAddress">
                                     <div class="questionnaire-input__descriptor">
@@ -612,7 +697,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="questionnaire-politics js-checkbox">
+                <div class="questionnaire-politics ">
                     <div class="questionnaire-check__icon">
                         <input type="checkbox" name="politics" value="Згоден">
                         <i class="fa-check"></i>

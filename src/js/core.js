@@ -129,19 +129,19 @@
 // 	frameClose();
 //  });
 
-const anchorElems = document.querySelectorAll('.anchor');
-anchorElems.forEach(anchor => {
-  anchor.addEventListener('click', (event) => {
-    event.preventDefault();
-    const href = anchor.getAttribute('href');
-    const top = document.querySelector(href).offsetTop;
-    window.scrollTo({
-      top: top,
-      behavior: 'smooth'
-    });
-    frameClose();
-  });
-});
+// const anchorElems = document.querySelectorAll('.anchor');
+// anchorElems.forEach(anchor => {
+//   anchor.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     const href = anchor.getAttribute('href');
+//     const top = document.querySelector(href).offsetTop;
+//     window.scrollTo({
+//       top: top,
+//       behavior: 'smooth'
+//     });
+//     frameClose();
+//   });
+// });
 
 
 

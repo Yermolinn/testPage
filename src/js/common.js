@@ -210,14 +210,14 @@ console.log(chek);
 // });
 
 
-const questionnaireChecks = document.querySelectorAll('.questionnaire-check');
-questionnaireChecks.forEach(check => {
-  check.addEventListener('click', () => {
-    const siblingChecks = Array.from(check.parentNode.children).filter(child => child !== check && child.classList.contains('questionnaire-check'));
-    siblingChecks.forEach(siblingCheck => siblingCheck.classList.remove('questionnaire-check_active'));
-    check.classList.add('questionnaire-check_active');
-  });
-});
+// const questionnaireChecks = document.querySelectorAll('.questionnaire-check');
+// questionnaireChecks.forEach(check => {
+//   check.addEventListener('click', () => {
+//     const siblingChecks = Array.from(check.parentNode.children).filter(child => child !== check && child.classList.contains('questionnaire-check'));
+//     siblingChecks.forEach(siblingCheck => siblingCheck.classList.remove('questionnaire-check_active'));
+//     check.classList.add('questionnaire-check_active');
+//   });
+// });
 
 
 // Переключатель класса - check_active 

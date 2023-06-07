@@ -83,7 +83,7 @@
     
 }
 .questionnaire-steps__content {
-    @include grid(4, 30px, 30px, 2);
+    @include grid(3, 30px, 30px, 2);
     grid-gap: 15px;
 
     @media screen and (min-width: 767px) and (max-width: 1280px) {
@@ -160,7 +160,8 @@
     
 }
 .questionnaire-item__content {
-    padding: 35px 21px 40px; 
+    // padding: 35px 21px 40px; 
+    padding: 30px 20px; 
     background: #F6F6F6;
     border-radius: 10px;
     box-sizing: border-box;
@@ -169,6 +170,14 @@
     }
     
 }
+
+.laguages-group-btn {
+display: flex;
+gap: 20px;
+justify-content: left;
+
+}
+
 .questionnaire-item_flex {
     display: flex;
     align-items: flex-start;
@@ -237,6 +246,9 @@
     gap: 20px;
     // @include grid(2, 24px, 27px, 1);
     // grid-gap: 14px;
+    .questionnaire-check{
+        width: 150px;
+    }
 }
 
 
@@ -370,6 +382,7 @@
     color: #665CAC;
     margin-left: 10px;
 }
+
 .questionnaire-messege__check {
     width: 29px;
     height: 29px;
@@ -396,6 +409,8 @@
         transform: scale(1);
     }
 }
+
+
 .questionnaire-line__sub-duble {
     margin-top: 27px;
     @include grid(2, 24px, 27px);
@@ -435,7 +450,7 @@
 
 
 .questionnaire-checkbox {
-    width: 100px;
+    max-width: 90px;
     height: 52px;
     padding: 0 13px;
     display: flex;
@@ -445,10 +460,14 @@
     box-sizing: border-box;
     border-radius: 150px;
     cursor: pointer;
-    p {
-        font-size: 16px;
-        line-height: 19px;
-    }
+    label {
+            margin-left: 10px;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &:last-child {
+            max-width: 150px;
+        }
 }
 
 
@@ -649,23 +668,27 @@
 }
 .questionnaire-group-flex {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: left;
+    gap: 20px;
     .questionnaire-check, .questionnaire-checkbox {
-        margin-right: 20px;
-        padding-right: 24px;
+        // margin-right: 20px;
+        // gap: 20px;
+        // padding-right: 24px;
         &:last-child {
-            margin-right: 0;
+            // max-width: 180px;
         }
     }
     @include mudak('max', 'xl') {
-        flex-wrap: wrap;   
+        // flex-wrap: wrap;   
         .questionnaire-check, .questionnaire-checkbox {
-            width: fit-content;
+            width: 130px;
             margin-top: 10px;
         }
     }
     @include mudak('max', 'sm') {
-        @include grid(2, 20px, 14px, 0, 0, 2);
+        // @include grid(2, 20px, 14px, 0, 0, 2);
         .questionnaire-check, .questionnaire-checkbox {
             width: 100%;
             margin-top: 0;
@@ -690,6 +713,7 @@
     align-items: flex-start;
     cursor: pointer;
     p {
+        margin-left: 10px;
         font-size: 14px;
         line-height: 20px;
     }
