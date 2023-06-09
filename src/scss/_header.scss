@@ -668,6 +668,9 @@ fill: rgb(60, 183, 255);
 }
 
 
+.no-scroll{
+    overflow: hidden;
+}
 
 
 
@@ -677,6 +680,7 @@ fill: rgb(60, 183, 255);
     height: 100vh;
     padding: 35px 20px;
     // display: none;
+    margin-top: 20px;
     padding-bottom: 20px;
     background-color: #fff;
     box-sizing: border-box;

@@ -1,8 +1,8 @@
 const burger = document.querySelector('.burger');
 const headerMob = document.querySelector('.header-mob');
-const main = document.querySelector('main');
+const body = document.querySelector('body');
 
-
+console.log(burger);
 
 // burger.addEventListener('click', function() {
 //   burger.classList.toggle('burger_active');
@@ -12,7 +12,7 @@ const main = document.querySelector('main');
 burger.addEventListener('click', function(e) {
   this.classList.toggle('burger_active');
   headerMob.style.display = (headerMob.style.display === 'none') ? 'block' : 'none';
-  main.classList.toggle('no-scroll');
+  body.classList.toggle('no-scroll');
   // let elem = e.target
   // console.log(elem);
   // if (this.classList.contains('burger_active')) {
