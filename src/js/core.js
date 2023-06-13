@@ -1,7 +1,7 @@
 // $(document).ready(function() {
 // 	 $("body").removeClass("load");
 
-// 	 // AJAX отправка формы 
+// 	 // AJAX отправка формы
 // 	 $(".submit-form").submit(function(e) {
 // 	      e.preventDefault()
 // 	      var form_data = $(this).serialize(); //собераем все данные из формы
@@ -27,7 +27,7 @@
 
 // $('.slider').slick({
 // 	infinite: true,
-// 	slidesToShow: 3, 
+// 	slidesToShow: 3,
 // 	prevArrow: '.prev',
 // 	nextArrow: '.next',
 // 	dots: true,
@@ -54,8 +54,8 @@
 
 // Функция закрытия попапов
 // let frameClose = () => {
-// 	$('.popup-frame').fadeOut(); 
-// 	$('.popup').fadeOut(); 
+// 	$('.popup-frame').fadeOut();
+// 	$('.popup').fadeOut();
 // 	$('body').removeClass('open-frame');
 // }
 
@@ -170,12 +170,20 @@
 
 // Выполнение скрипта если пользователь покинул сайт
 // var stop = false
-// window.onmouseout=function(event){ 
+// window.onmouseout=function(event){
 //   if(event.clientY < 0 && stop == false) {
 
-//   	// Код скрипта	
+//   	// Код скрипта
 	
 //   	stop = true;
 //   }
 // }
 
+
+
+// const servicesLink = document.getElementById('services');
+// const submenu = document.querySelector('.submenu');
+
+// servicesLink.addEventListener('click', function() {
+//   submenu.classList.toggle('active');
+// });

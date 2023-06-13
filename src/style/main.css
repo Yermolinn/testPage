@@ -5364,7 +5364,7 @@ label {
 .hire-list::before {
   content: '';
   width: 2px;
-  height: 575px;
+  height: 200px;
   background-color: #023333;
   -webkit-border-radius: 4px;
   border-radius: 4px;
@@ -5376,7 +5376,7 @@ label {
 }
 @media only screen and (max-width: 1250px) {
   .hire-list::before {
-    height: 880px;
+    height: 200px;
   }
 }
 @media only screen and (max-width: 720px) {

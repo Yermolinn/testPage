@@ -524,6 +524,22 @@ label {
   }
 }
 
+.client-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .client-form-header {
+    gap: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client-form-header {
+    gap: 150px;
+  }
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -1089,10 +1105,15 @@ label {
   display: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header-mob {
   width: 100vw;
   height: 100vh;
   padding: 35px 20px;
+  margin-top: 20px;
   padding-bottom: 20px;
   background-color: #fff;
   box-sizing: border-box;
@@ -1118,6 +1139,42 @@ label {
   padding: 15px 0;
 }
 
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav .submenu {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f0f0f0;
+  padding: 10px;
+  transition: all 0.4s;
+}
+
+nav .submenu li {
+  display: block;
+}
+
+nav li:hover > .submenu {
+  display: block;
+  opacity: 1;
+}
+
 .footer {
   padding: 20px 0;
   color: #fff;
@@ -1138,7 +1195,11 @@ label {
 .footer-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .footer-info {
+    gap: 20px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 1280px) {
   .footer-info {
@@ -4378,7 +4439,7 @@ label {
 .hire-list::before {
   content: "";
   width: 2px;
-  height: 575px;
+  height: 200px;
   background-color: #023333;
   border-radius: 4px;
   position: absolute;
@@ -4500,6 +4561,23 @@ label {
     height: 24px;
     font-size: 14px;
   }
+}
+
+.employer-list {
+  font-size: 16px;
+  line-height: 24px;
+}
+.employer-list ::before {
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .employer-list {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+.employer-list li {
+  list-style: auto !important;
 }
 
 .team {

@@ -156,7 +156,7 @@
     &::before {
         content: '';
         width: 2px;
-        height: 575px;
+        height: 200px;
         background-color: $sub-color;
         border-radius: 4px;
         position: absolute;
@@ -167,7 +167,7 @@
     }
     @include mudak('max', 'xl') {
         &::before {
-            height: 880px;
+            height: 300px;
         }
     }
     @include mudak('max', 'sm') {
@@ -276,4 +276,25 @@
         }
     }
     
+}
+
+
+.employer-list {
+        font-size: 16px;
+        line-height: 24px;
+
+        ::before{
+            font-weight: 700;
+        }
+
+    @include mudak('max', 'sm') {
+            font-size: 12px;
+            line-height: 16px;
+    }
+
+
+
+    li {
+        list-style:auto !important;
+    }
 }
