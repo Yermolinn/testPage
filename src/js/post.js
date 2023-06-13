@@ -1,3 +1,11 @@
+let form = document.querySelector('form');
+let sbm_btn = document.querySelector('button[type="submit"]');
+let sendingForm = document.getElementById('sendingForm');
+let noSendForm = document.getElementById('noSendForm');
+let modal = new bootstrap.Modal(document.getElementById('modalSuccess'));
+let checkboxes = document.querySelectorAll('.driveCat:checked');
+
+
 // рабочий код!!!!!!!!!!
 form.addEventListener('submit', onSubmit);
 async function onSubmit(e) {
@@ -9,21 +17,21 @@ async function onSubmit(e) {
 
 
             // якщо Не володіє англ, видаляє з форми рівень мови
- if (document.getElementById('no-english').checked) {
-    formData.delete('engLevel');
-  }
+//  if (document.getElementById('no-english').checked) {
+//     formData.delete('engLevel');
+//   }
             
             // якщо володіє англ, додає рівень мови 
- if (document.getElementById('english').checked) {
-    let engLevel = document.getElementById('engLevel').value;
-    formData.set('contact_cf_42db67815b80356236935b0078219d2fcc5f348f', 'Володію, ' + engLevel);
-  }
+//  if (document.getElementById('english').checked) {
+//     let engLevel = document.getElementById('engLevel').value;
+//     formData.set('contact_cf_42db67815b80356236935b0078219d2fcc5f348f', 'Володію, ' + engLevel);
+//   }
 
 
             //  якщо має водійське, додає вибрані чекбокси в одну змінну.
-  let checkboxes = document.querySelectorAll('.driveCat:checked');
-  let driveCategories = Array.from(checkboxes).map((checkbox) => checkbox.value);
-  formData.append('driveCategories', driveCategories.join(', '));
+//   let checkboxes = document.querySelectorAll('.driveCat:checked');
+//   let driveCategories = Array.from(checkboxes).map((checkbox) => checkbox.value);
+//   formData.append('driveCategories', driveCategories.join(', '));
 
 
   let invalid = document.querySelectorAll(
@@ -33,6 +41,9 @@ async function onSubmit(e) {
             sendingForm.style.display = 'flex';
         let response = await fetch('./webhook.php', {
             method: 'POST',
+            headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                    },
             credentials: 'same-origin',
             body: formData,
         });

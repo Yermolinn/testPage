@@ -345,8 +345,6 @@ function tabClick(counter) {
 const nextBtn = document.querySelector('.questionnaire-btn__next');
 const prevBtn = document.querySelector('.questionnaire-btn__prev');
 const steps = document.querySelectorAll('.questionnaire-steps__item');
-// const marriageTrue = document.querySelector('.marriage-true');
-// const marriageFalse = document.querySelector('.marriage-false');
 
 nextBtn.addEventListener('click', function(e) {
   e.preventDefault();

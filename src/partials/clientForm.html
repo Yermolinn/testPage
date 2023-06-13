@@ -36,17 +36,13 @@
                     <i class="fa-step-2 questionnaire-steps__icon"></i>
                     <p>Освіта та знання мов</p>
                 </div>
-                <!-- <div class="questionnaire-steps__item" data-index="3">
-                    <i class="fa-step-3 questionnaire-steps__icon"></i>
-                    <p>Попередні місця</p>
-                </div> -->
                 <div class="questionnaire-steps__item" data-index="3">
-                    <i class="fa-step-4 questionnaire-steps__icon"></i>
+                    <i class="fa-step-3 questionnaire-steps__icon"></i>
                     <p>Додаткова інформація</p>
                 </div>
             </div>
         </div>
-        <form class="questionnaire-list needs-validation" novalidate="">
+        <form class="questionnaire-list needs-validation" novalidate="" id="form">
             <div class="questionnaire-list__step questionnaire-list__step-active" data-step="1">
                 <div class="questionnaire-item">
                     <h3 class="questionnaire-item__title">Особиста інформація</h3>
@@ -136,7 +132,7 @@
                                     <div class="questionnaire-line_duble">
                                         <div class="questionnaire-check" id="shelterCheck">
                                             <div class="questionnaire-check__icon">
-                                                <input type="radio" class="form-check-input" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802" id="shelter"
+                                                <input type="radio" class="form-control" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802" id="shelter"
                                                     value="Так">
                                                 <i class="fa-check"></i>
                                             </div>
@@ -144,7 +140,7 @@
                                         </div>
                                         <div class="questionnaire-check" id="noShelterCheck">
                                             <div class="questionnaire-check__icon">
-                                                <input type="radio" class="form-check-input" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802" id="no-shelter"
+                                                <input type="radio" class="form-control" name="contact_cf_4c6eb27c5bdcd561f145ac1d88f4cc42b5eaf802" id="no-shelter"
                                                     value="Ні" checked="">
                                                 <i class="fa-check"></i>
                                             </div>
@@ -160,7 +156,7 @@
                                             class="importent">*</span></label>
                             
                                     <div class="questionnaire-input">
-                                        <input type="text" class="questionnaire-input form-control" id="countryShelter" name="countryShelter">
+                                        <input type="text" class="form-control" id="countryShelter" name="countryShelter">
                             
                                         <div class="invalid-feedback">
                                             Вкажіть країну перебування
@@ -195,18 +191,17 @@
                     <div class="questionnaire-item__content">
                         <div class="questionnaire-line js-student">
                             <label class="questionnaire-label">Ви студент?*</label>
-                            <div
-                                class="questionnaire-line_duble ">
+                            <div class="questionnaire-line_duble ">
                                 <div class="questionnaire-check" id="studentCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" id="student" name="student" value="Так">
+                                        <input type="radio" class="form-control" id="student" name="contact_cf_262b8a394c1df1aa130ecabd8230c0733f4958ec" value="Так">
                                         <i class="fa-check"></i>
                                     </div>
                                     <label for="no-student">Так</label>
                                 </div>
                                 <div class="questionnaire-check" id="noStudentCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" id="no-student" name="student" value="Ні">
+                                        <input type="radio" class="form-control" id="no-student" name="contact_cf_262b8a394c1df1aa130ecabd8230c0733f4958ec" value="Ні">
                                         <i class="fa-check"></i>
                                     </div>
                                     <label for="no-student">Ні</label>
@@ -232,7 +227,7 @@
                                 <div class="questionnaire-line__item">
                                     <label for="faculty" class="questionnaire-label">Факультет</label>
                                     <div class="questionnaire-input">
-                                        <input type="text" class="form-control" id="faculty" name="contact_cf_7c231d725c0d5cb4b2159cea6266128406139b42">
+                                        <input type="text" class="form-control" id="faculty" name="contact_cf_46b91c78ba6a3f9762f0fe1f2dc74238df90c289">
                                         <div class="invalid-feedback">
                                             Поле не може бути пустим
                                         </div>
@@ -311,28 +306,28 @@
                         <div class="questionnaire-line laguages-group-btn">
                             <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
-                                    <input type="radio" name="lang[]" value="Не володію">
+                                    <input type="radio" name="contact_cf_42db67815b80356236935b0078219d2fcc5f348f" value="Не володію">
                                     <i class="fa-check"></i>
                                 </div>
                                 <label>Не володію</label>
                             </div>
                             <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
-                                    <input type="radio" name="lang[]" value="Базові знання">
+                                    <input type="radio" name="contact_cf_42db67815b80356236935b0078219d2fcc5f348f" value="Базові знання">
                                     <i class="fa-check"></i>
                                 </div>
                                 <label>Базові знання</label>
                             </div>
                             <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
-                                    <input type="radio" name="lang[]" value="Розмовна">
+                                    <input type="radio" name="contact_cf_42db67815b80356236935b0078219d2fcc5f348f" value="Розмовна">
                                     <i class="fa-check"></i>
                                 </div>
                                 <label>Розмовна</label>
                             </div>
                             <div class="questionnaire-check">
                                 <div class="questionnaire-check__icon">
-                                    <input type="radio" name="lang[]" value="Вільне володіння">
+                                    <input type="radio" name="contact_cf_42db67815b80356236935b0078219d2fcc5f348f" value="Вільне володіння">
                                     <i class="fa-check"></i>
                                 </div>
                                 <label>Вільне володіння</label>
@@ -344,107 +339,11 @@
                                 <input type="text" class="form-control" id="languages" name="contact_cf_0947666cbb4f7f4c68b45980111dad17b3f01133">
                             </div>
                         </div>
-                        <!-- <div class="questionnaire-add">
-                            <div class="questionnaire-add__icon"></div>
-                            <p>Додати іноземну мову</p>
-                        </div> -->
                     </div>
                 </div>
             </div>
 
 
-
-            <!-- <div class="questionnaire-list__step" data-step="3">
-                <div class="questionnaire-item">
-                    <p class="questionnaire-item__title">Місця роботи</p>
-                    <div class="questionnaire-item__content">
-                        <b class="questionnaire-item__title-main">Будь-ласка, вкажіть всі місця роботи , у тому числі
-                            закордоном</b>
-                        <div class="questionnaire-line questionnaire-line_duble">
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Назва організації</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="company">
-                                </div>
-                            </div>
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Контактна особа</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="preson">
-                                </div>
-                            </div>
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Адреса</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
-                                    <div class="questionnaire-input__descriptor">
-                                        <i class="fa-step-4"></i>
-                                        <p class="questionnaire-input__descriptor_485">Вкажіть максимально повну адресу
-                                            підприємства, на якому ви працювали. Якщо детальна інформація не збереглася,
-                                            вкажіть, як мінімум, країну та місто розташування підприємства</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Телефони</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="phone" class="input-counter">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionnaire-line">
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Робочі обов’язки</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="responsibilities ">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionnaire-line questionnaire-line_work">
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Період роботи</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
-                                    <div class="questionnaire-input__descriptor">
-                                        <i class="fa-step-4"></i>
-                                        <p class="questionnaire-input__descriptor_325">Вкажіть максимально точно період
-                                            роботи на даному підприємстві </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Паперові рекомендації</p>
-                                <div class="questionnaire-group-check">
-                                    <div class="questionnaire-check js-checkbox">
-                                        <div class="questionnaire-check__icon">
-                                            <input type="radio" name="recommendations[]" value="Маю">
-                                            <i class="fa-check"></i>
-                                        </div>
-                                        <p>Маю</p>
-                                    </div>
-                                    <div class="questionnaire-check js-checkbox">
-                                        <div class="questionnaire-check__icon">
-                                            <input type="radio" name="recommendations[]" value="Не маю">
-                                            <i class="fa-check"></i>
-                                        </div>
-                                        <p>Не маю</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="questionnaire-delete">
-                                <div class="questionnaire-delete__content">
-                                    <div class="questionnaire-delete__icon"></div>
-                                    <p>Видалити запис</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionnaire-add">
-                            <div class="questionnaire-add__icon"></div>
-                            <p>Додати місце роботи</p>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
 
 
@@ -458,42 +357,42 @@
                                 <div class="questionnaire-group-flex">
                                     <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
-                                            <input type="checkbox" name="driver[]" value="A">
+                                            <input type="checkbox" name="contact_cf_ae959de70df5eb32679cf3ec56785f675d0c903c" value="A">
                                             <i class="fa-check"></i>
                                         </div>
                                         <label>A</label>
                                     </div>
                                     <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
-                                            <input type="checkbox" name="driver[]" value="B">
+                                            <input type="checkbox" name="contact_cf_ae959de70df5eb32679cf3ec56785f675d0c903c" value="B">
                                             <i class="fa-check"></i>
                                         </div>
                                         <label>B</label>
                                     </div>
                                     <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
-                                            <input type="checkbox" name="driver[]" value="C">
+                                            <input type="checkbox" name="contact_cf_ae959de70df5eb32679cf3ec56785f675d0c903c" value="C">
                                             <i class="fa-check"></i>
                                         </div>
                                         <label>C</label>
                                     </div>
                                     <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
-                                            <input type="checkbox" name="driver[]" value="D">
+                                            <input type="checkbox" name="contact_cf_ae959de70df5eb32679cf3ec56785f675d0c903c" value="D">
                                             <i class="fa-check"></i>
                                         </div>
                                         <label>D</label>
                                     </div>
                                     <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
-                                            <input type="checkbox" name="driver[]" value="E">
+                                            <input type="checkbox" name="contact_cf_ae959de70df5eb32679cf3ec56785f675d0c903c" value="E">
                                             <i class="fa-check"></i>
                                         </div>
                                         <label>E</label>
                                     </div>
                                     <div class="questionnaire-checkbox">
                                         <div class="questionnaire-check__icon">
-                                            <input type="checkbox" name="driver[]" value="Трактор">
+                                            <input type="checkbox" name="contact_cf_ae959de70df5eb32679cf3ec56785f675d0c903c" value="Трактор">
                                             <i class="fa-check"></i>
                                         </div>
                                         <label>Трактор</label>
@@ -503,7 +402,7 @@
                             <div class="questionnaire-line__item questionnaire-line__item_right">
                                 <label class="questionnaire-label">Досвід керування</label>
                                 <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
+                                    <input type="text" name="ccontact_cf_31d23bd4be85682219f28cdca3277a7265812d07">
                                     <div class="questionnaire-input__descriptor">
                                         <i class="fa-step-4"></i>
                                         <p class="questionnaire-input__descriptor_440">Вкажіть реальний досвід керування
@@ -517,7 +416,7 @@
                             <div class="questionnaire-line__item">
                                 <label class="questionnaire-label">Досвід роботи з спеціалізованою технікою</label>
                                 <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
+                                    <input type="text" name="contact_cf_081eb0276d10c1a19eb0c0f75c1eee113d560a13">
                                     <div class="questionnaire-input__descriptor">
                                         <i class="fa-step-4"></i>
                                         <p class="questionnaire-input__descriptor_440">Опишіть детально, з якою
@@ -532,7 +431,7 @@
                             <div class="questionnaire-line__item">
                                 <label class="questionnaire-label">Інші навички</label>
                                 <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
+                                    <input type="text" name="contact_cf_c5382088dc764cbc864c17d7ea93aa3ec03c8542">
                                     <div class="questionnaire-input__descriptor">
                                         <i class="fa-step-4"></i>
                                         <p class="questionnaire-input__descriptor_485">Опишіть детально, якими
@@ -545,85 +444,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="questionnaire-item">
-                    <p class="questionnaire-item__title">Додаткова інформація</p>
-                    <div class="questionnaire-item__content">
-                        <div class="questionnaire-line questionnaire-line_three">
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Зріст*</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
-                                </div>
-                            </div>
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Вага*</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
-                                </div>
-                            </div>
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Розмір взуття*</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionnaire-line">
-                            <div class="questionnaire-line__item">
-                                <p class="questionnaire-label">Захоплення</p>
-                                <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionnaire-line">
-                            <p class="questionnaire-label">Паління*</p>
-                            <div class="questionnaire-group-three">
-                                <div class="questionnaire-check">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="driver[]" value="Не палю">
-                                        <i class="fa-check"></i>
-                                    </div>
-                                    <label>Не палю</label>
-                                </div>
-                                <div class="questionnaire-check">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="driver[]" value="Іноді">
-                                        <i class="fa-check"></i>
-                                    </div>
-                                    <label>Іноді</label>
-                                </div>
-                                <div class="questionnaire-check">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="driver[]" value="Палю">
-                                        <i class="fa-check"></i>
-                                    </div>
-                                    <label>Палю</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="questionnaire-line">
-                            <p class="questionnaire-label">Хронічні захворювання, алергії*</p>
-                            <div
-                                class="questionnaire-line questionnaire-line_third questionnaire-line_duble questionnaire-line_duble_mob">
-                                <div class="questionnaire-check">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Не має">
-                                        <i class="fa-check"></i>
-                                    </div>
-                                    <label>Не має</label>
-                                </div>
-                                <div class="questionnaire-check">
-                                    <div class="questionnaire-check__icon">
-                                        <input type="radio" name="student" value="Маю">
-                                        <i class="fa-check"></i>
-                                    </div>
-                                    <label>Маю</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
 
                 <div class="questionnaire-item questionnaire-item_last">
                     <label class="questionnaire-item__title">Побажання щодо роботи</label>
@@ -632,28 +452,24 @@
                             <div class="questionnaire-line__item">
                                 <label class="questionnaire-label">Бажана дата та термін роботи</label>
                                 <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
+                                    <input type="text" name="deal_cf_aee886908bc4a731e6bbcd60ae56ded02f8fc584">
                                 </div>
                             </div>
                         </div>
-
-
-
-
                         <div class="questionnaire-line">
                             <label class="questionnaire-label">Плануєте їхати самостійно</label>
                             <div
                                 class="questionnaire-line questionnaire-line_third questionnaire-line_duble  questionnaire-line_duble_mob">
                                 <div class="questionnaire-check" id="noTogetherCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" id="no-together" name="no-together" value="Самостійно">
+                                        <input type="radio" id="no-together" name="deal_cf_f0a4df0e430ed3fba8cb83a641e9d9ca6c27c4c7" value="Самостійно">
                                         <i class="fa-check"></i>
                                     </div>
-                                    <label for="alone">Самостійно</label>
+                                    <label for="no-together">Самостійно</label>
                                 </div>
                                 <div class="questionnaire-check" id="togetherCheck">
                                     <div class="questionnaire-check__icon">
-                                        <input type="radio" id="together" name="together" value="Разом">
+                                        <input type="radio" id="together" name="deal_cf_f0a4df0e430ed3fba8cb83a641e9d9ca6c27c4c7" value="Разом">
                                         <i class="fa-check"></i>
                                     </div>
                                     <label for="together">Разом</label>
@@ -683,9 +499,9 @@
                         </div>
                         <div class="questionnaire-line">
                             <div class="questionnaire-line__item">
-                                <label class="questionnaire-label" for="companyAddress">Коментар</label>
+                                <label class="questionnaire-label" for="comment">Коментар</label>
                                 <div class="questionnaire-input">
-                                    <input type="text" name="companyAddress">
+                                    <input type="text" name="deal_cf_52776727e9acc4774092471866457a39cea58481" id="comment">
                                     <div class="questionnaire-input__descriptor">
                                         <i class="fa-step-4"></i>
                                         <p class="questionnaire-input__descriptor_440">За бажанням, ви можете уточнити
@@ -712,12 +528,52 @@
             <div class="questionnaire-btn">
                 <a href="#" class="questionnaire-btn__prev">Назад</a>
                 <a href="#" class="questionnaire-btn__next">ДАЛІ</a>
-                <label class="questionnaire-sub">
+                <!-- <label class="questionnaire-sub">
                     <span>Відправити</span>
                     <input type="submit">
-                </label>
+                </label> -->
             </div>
 
+
+
+            <div class="justify-content-center" style="display: none;" id="sendingForm">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Відправлення...</span>
+                </div>
+            </div>
+            <div class="alert alert-danger" role="alert" id="noSendForm" style="display: none;">
+                Щось пішло не так, анкету не відправлено. Перевірте чи всі обов'язкові поля заповнені. Або напишіть
+                нам на електрону адресу:
+                <a href="mailto:help@uamf.com."><strong>help@uamf.com.ua</strong></a>
+            </div>
+            <div class="col-12 mt-4">
+                <button class="btn btn-primary w-100" type="submit">Відправити</button>
+            </div>
+
+
         </form>
+
+
+
+
+
+
+        <div class="modal fade" id="modalSuccess" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Дякуємо, ваша заявка відправлена</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center pt-5 pb-5">
+                        <img src="./images/logo.svg" width="64" height="64">
+                        <span>Найближчим часом ми з вами зв’яжемось.</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Зачинити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

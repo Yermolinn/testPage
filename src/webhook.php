@@ -1,6 +1,6 @@
 <?php
 $data_string = json_encode($_POST);
-$key = "e54cbdcd-ca0e-4ad4-90b7-ab26c581428b";
+$key = "7f925317-c469-4ce9-bfd9-f2bc445ab5e5";
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, "https://webhook.site/".$key);
