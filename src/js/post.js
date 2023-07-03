@@ -39,7 +39,7 @@ async function onSubmit(e) {
   );
     if (!invalid.length) {
             sendingForm.style.display = 'flex';
-        let response = await fetch('./webhook.php', {
+        let response = await fetch('../webhook.php', {
             method: 'POST',
             headers: {
                     'Content-Type': 'application/json;charset=utf-8'

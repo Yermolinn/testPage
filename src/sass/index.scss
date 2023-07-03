@@ -1,2 +1,23 @@
 @import './common';
-@import './example';
+@import '../scss/snippets/mixin';
+@import '../scss/snippets/keyframes';
+@import '../scss/snippets/function';
+@import '../scss/snippets/hover';
+@import '../scss/snippets/main-snippets';
+@import '../scss/main.scss';
+@import '../scss/fonts';
+@import '../scss/404';
+@import '../scss/about';
+@import '../scss/benefits';
+@import '../scss/contact';
+@import '../scss/employer';
+@import '../scss/footer';
+@import '../scss/header';
+@import '../scss/main-page';
+@import '../scss/normaliz';
+@import '../scss/politics';
+@import '../scss/popup';
+@import '../scss/questionnaire';
+@import '../scss/thanks';
+@import '../scss/vacancies';
+
